@@ -56,11 +56,6 @@ const updateProgress = () => {
   progressBar.style.width = `${Math.min(100, Math.max(0, ratio)).toFixed(2)}%`;
 };
 
-const recalcLayout = () => {
-  // Section tops are computed live in setActiveLink to avoid stale offsets
-  // when media/content loads after initial script execution.
-};
-
 const onFrame = () => {
   setActiveLink();
   updateProgress();
@@ -146,16 +141,13 @@ window.addEventListener(
 );
 
 window.addEventListener("resize", () => {
-  recalcLayout();
   onFrame();
 });
 
 window.addEventListener("load", () => {
-  recalcLayout();
   onFrame();
 });
 
-recalcLayout();
 onFrame();
 
 const enableCursorGrid = () => {
