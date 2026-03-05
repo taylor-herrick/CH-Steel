@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #e9eef3;
   --panel: #f4f7fa;
   --panel-strong: #dde5ee;
@@ -476,6 +476,123 @@ h1 {
   font-size: 1.02rem;
 }
 
+.project-kicker-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-kicker-row .kicker {
+  margin: 0;
+  color: #1a4469;
+}
+
+.project-kicker-logo {
+  height: 2.65rem;
+  width: auto;
+  display: block;
+}
+
+.partner-projects {
+  margin-top: 0;
+}
+
+.partner-project-columns {
+  margin-top: 0.95rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.partner-project-column {
+  border: 1px solid rgba(101, 126, 150, 0.42);
+  background: rgba(239, 246, 253, 0.9);
+  border-radius: 0.75rem;
+  padding: clamp(0.9rem, 2vw, 1.2rem);
+  box-shadow: 0 8px 18px rgba(10, 19, 29, 0.11);
+  transition: transform 180ms var(--ease), box-shadow 180ms linear;
+}
+
+.partner-project-column:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(10, 19, 29, 0.16);
+}
+
+.partner-project-column-herrick {
+  border-color: rgba(88, 128, 173, 0.42);
+  border-top: 3px solid #2b6aa9;
+  background:
+    radial-gradient(circle at 88% 14%, rgba(50, 122, 197, 0.22), rgba(50, 122, 197, 0) 55%),
+    linear-gradient(160deg, rgba(18, 59, 106, 0.14), rgba(18, 59, 106, 0.05)),
+    #f2f8ff;
+}
+
+.partner-project-column-culham {
+  border-color: rgba(181, 88, 88, 0.42);
+  border-top: 3px solid #9c2b2b;
+  background:
+    radial-gradient(circle at 88% 14%, rgba(209, 64, 64, 0.24), rgba(209, 64, 64, 0) 55%),
+    linear-gradient(160deg, rgba(169, 42, 42, 0.14), rgba(169, 42, 42, 0.05)),
+    #fff5f5;
+}
+
+.partner-project-column h3 {
+  margin: 0 0 0.7rem;
+  color: #1a4469;
+  font-size: 1.22rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.partner-project-column-herrick h3 {
+  color: #2b6aa9;
+}
+
+.partner-project-column-culham h3 {
+  color: #9c2b2b;
+}
+
+.partner-project-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.partner-project-item {
+  display: grid;
+  grid-template-columns: 8.25rem minmax(0, 1fr);
+  gap: 0.78rem;
+  align-items: center;
+  border: 1px solid rgba(106, 129, 153, 0.34);
+  border-radius: 0.55rem;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 0.36rem;
+}
+
+.partner-project-item img {
+  width: 100%;
+  height: 5.2rem;
+  object-fit: cover;
+  border: 1px solid rgba(78, 102, 126, 0.3);
+  border-radius: 0.35rem;
+}
+
+.partner-project-item span {
+  color: #23384d;
+  font-size: 0.97rem;
+  line-height: 1.28;
+}
+
+.partner-project-column-herrick .partner-project-item {
+  border-left: 3px solid rgba(43, 106, 169, 0.58);
+}
+
+.partner-project-column-culham .partner-project-item {
+  border-left: 3px solid rgba(156, 43, 43, 0.58);
+}
+
 .cb-points {
   display: grid;
   gap: 0.4rem;
@@ -497,19 +614,29 @@ h1 {
   gap: 0.45rem;
 }
 
+.project-client-note {
+  margin-top: 0.55rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9a4646;
+}
+
 .cb-story-card {
   border: 1px solid rgba(79, 100, 124, 0.36);
   background: rgba(238, 245, 252, 0.9);
-  padding: 0.55rem;
+  padding: 0.55rem 0.88rem;
 }
 
 .cb-story-card strong {
   display: block;
   color: #1f3550;
   font-family: "Rajdhani", "Arial Narrow", sans-serif;
-  font-size: 1.05rem;
-  letter-spacing: 0.07em;
+  font-size: clamp(0.78rem, 1.1vw, 0.96rem);
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  line-height: 1.1;
+  white-space: nowrap;
 }
 
 .cb-story-card span {
@@ -551,7 +678,7 @@ h1 {
 .cb-slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -754,9 +881,9 @@ h1 {
   flex: 0 0 auto;
 }
 
-.st-icon-env { background-image: url("assets/images/environment.svg"); }
-.st-icon-social { background-image: url("assets/images/social.svg"); }
-.st-icon-innovation { background-image: url("assets/images/innovation.svg"); }
+.st-icon-env { background-image: url("assets/images/icons/environment.svg"); }
+.st-icon-social { background-image: url("assets/images/icons/social.svg"); }
+.st-icon-innovation { background-image: url("assets/images/icons/innovation.svg"); }
 
 .st-col li {
   padding: 0.62rem 0;
@@ -811,7 +938,7 @@ h1 {
   inset: 0;
   background:
     linear-gradient(180deg, rgba(229, 239, 250, 0.88), rgba(224, 235, 248, 0.9)),
-    url("assets/images/group.jpg");
+    url("assets/images/about us/group.jpg");
   background-position: center;
   background-size: cover;
   opacity: 0.44;
@@ -1089,7 +1216,7 @@ h1 {
   background: linear-gradient(to top, rgba(11, 18, 27, 0.38), rgba(11, 18, 27, 0));
 }
 
-.visual-tile-1 { background-image: url("assets/images/commercial-bay-1.jpg"); }
+.visual-tile-1 { background-image: url("assets/images/projects/commercial-bay-1.jpg"); }
 .visual-tile-2 { background-image: url("assets/images/profile-hero.jpg"); }
 
 .visual-tile.is-placeholder {
@@ -1241,7 +1368,7 @@ h1 {
   overflow: hidden;
   background:
     var(--hero-shell-gradient),
-    url("assets/images/group.jpg");
+    url("assets/images/about us/group.jpg");
   background-size: cover;
   background-position: center 28%;
 }
@@ -1424,8 +1551,17 @@ h1 {
 @media (max-width: 980px) {
   .split,
   .stat-grid,
-  .card-grid {
+  .card-grid,
+  .partner-project-columns {
     grid-template-columns: 1fr;
+  }
+
+  .partner-project-item {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-project-item img {
+    height: 9.5rem;
   }
 }
 
@@ -1608,12 +1744,12 @@ h1 {
 
 .impact-photo-herrick {
   min-height: 13rem;
-  background-image: url("assets/images/commercial-bay-4.png");
+  background-image: url("assets/images/about us/herrick-capabilities.jpg");
 }
 
 .impact-photo-culham {
   min-height: 13rem;
-  background-image: url("assets/images/infrastructure.jpg");
+  background-image: url("assets/images/about us/culham-capabilities.jpg");
 }
 
 .impact-cap-card-herrick .impact-photo::after {
@@ -1690,13 +1826,13 @@ h1 {
 
 .impact-photo-quality {
   min-height: 19rem;
-  background-image: url("assets/images/quality.jpg");
+  background-image: url("assets/images/about us/quality.jpg");
   box-shadow: 0 10px 22px rgba(12, 23, 35, 0.2);
 }
 
 .impact-photo-safety {
   min-height: 19rem;
-  background-image: url("assets/images/safety.jpg");
+  background-image: url("assets/images/about us/safety.jpg");
   box-shadow: 0 10px 22px rgba(46, 18, 18, 0.2);
 }
 
@@ -1930,6 +2066,19 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.75rem;
+}
+
+.impact-cert-sections {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.impact-cert-group h3 {
+  margin: 0 0 0.55rem;
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1f4569;
 }
 
 .impact-cert-item {
