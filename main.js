@@ -150,64 +150,6 @@ window.addEventListener("load", () => {
 
 onFrame();
 
-const enableCursorGrid = () => {
-  if (!window.matchMedia("(pointer: fine)").matches) return;
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-  const cursorGrid = document.createElement("div");
-  cursorGrid.className = "cursor-grid";
-  document.body.appendChild(cursorGrid);
-
-  let rafId = 0;
-  let hideTimer = 0;
-  let targetX = 0;
-  let targetY = 0;
-  let currentX = 0;
-  let currentY = 0;
-
-  const render = () => {
-    const dx = targetX - currentX;
-    const dy = targetY - currentY;
-    currentX += dx * 0.22;
-    currentY += dy * 0.22;
-
-    cursorGrid.style.left = `${currentX}px`;
-    cursorGrid.style.top = `${currentY}px`;
-
-    if (Math.abs(dx) > 0.2 || Math.abs(dy) > 0.2) {
-      rafId = window.requestAnimationFrame(render);
-    } else {
-      rafId = 0;
-    }
-  };
-
-  window.addEventListener("mousemove", (event) => {
-    targetX = event.clientX;
-    targetY = event.clientY;
-    if (!currentX && !currentY) {
-      currentX = targetX;
-      currentY = targetY;
-    }
-
-    cursorGrid.style.opacity = "0.34";
-    if (!rafId) {
-      rafId = window.requestAnimationFrame(render);
-    }
-
-    window.clearTimeout(hideTimer);
-    hideTimer = window.setTimeout(() => {
-      cursorGrid.style.opacity = "0";
-    }, 220);
-  });
-
-  window.addEventListener("mouseleave", () => {
-    cursorGrid.style.opacity = "0";
-    window.clearTimeout(hideTimer);
-  });
-};
-
-enableCursorGrid();
-
 const initProjectsCarousels = () => {
   const isProjectsPage =
     !!document.getElementById("project-overview") ||
