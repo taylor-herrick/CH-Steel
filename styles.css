@@ -68,6 +68,31 @@ ul { margin: 0; padding: 0; list-style: none; }
 .container { width: min(var(--container), calc(100% - 2rem)); margin: 0 auto; }
 .sr-only { position: absolute; left: -9999px; }
 
+.skip-link {
+  position: fixed;
+  top: 0.6rem;
+  left: 0.6rem;
+  z-index: 1000;
+  transform: translateY(-150%);
+  background: #f7fbff;
+  color: var(--steel-900);
+  border: 2px solid var(--accent-red);
+  padding: 0.55rem 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: transform 140ms linear;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 3px solid rgba(210, 85, 58, 0.78);
+  outline-offset: 3px;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -99,7 +124,11 @@ ul { margin: 0; padding: 0; list-style: none; }
   display: block;
 }
 
-.nav-menu { display: flex; align-items: center; gap: var(--space-2); }
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.65rem, 1.25vw, 1.15rem);
+}
 .nav-item { position: relative; }
 
 .nav-item::after {
@@ -387,6 +416,18 @@ h1 {
   background: rgba(28, 50, 72, 0.5);
 }
 
+.btn-on-light {
+  border-color: rgba(53, 82, 110, 0.45);
+  color: #163049;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.btn-on-light:hover {
+  color: #0c141d;
+  border-color: rgba(175, 47, 50, 0.62);
+  background: #ffffff;
+}
+
 .hero-panel {
   border: 1px solid rgba(132, 157, 182, 0.42);
   border-top: 3px solid var(--accent-red);
@@ -540,7 +581,7 @@ h1 {
   inset: 0;
   background:
     linear-gradient(180deg, rgba(229, 239, 250, 0.88), rgba(224, 235, 248, 0.9)),
-    url("assets/images/want-to-see-more.jpg");
+    url("assets/images/project-experience.jpg");
   background-position: center;
   background-size: cover;
   opacity: 0.44;
@@ -1182,7 +1223,7 @@ h1 {
 .cap-grid {
   margin-top: var(--space-3);
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: var(--space-1);
 }
 
@@ -1329,6 +1370,14 @@ h1 {
   background:
     linear-gradient(170deg, rgba(8, 14, 22, 0.84), rgba(8, 14, 22, 0.56)),
     url("assets/images/infrastructure.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cap-card-coatings {
+  background:
+    linear-gradient(170deg, rgba(8, 14, 22, 0.84), rgba(8, 14, 22, 0.56)),
+    url("assets/images/industrial.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1509,61 +1558,12 @@ h1 {
 
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
-.visual-grid {
-  margin-top: var(--space-3);
-  display: grid;
-  grid-template-columns: 2fr 1.3fr 1fr 1fr 1fr;
-  gap: 0.6rem;
-}
-
-.visual-tile {
-  min-height: 10.5rem;
-  border: 1px solid rgba(127, 149, 172, 0.35);
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 5px 12px rgba(16, 24, 33, 0.08);
-  position: relative;
-  overflow: hidden;
-}
-
-.visual-tile::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(11, 18, 27, 0.38), rgba(11, 18, 27, 0));
-}
-
-.visual-tile-1 { background-image: url("assets/images/projects/commercial-bay-1.jpg"); }
-.visual-tile-2 { background-image: url("assets/images/profile-hero.jpg"); }
-
-.visual-tile.is-placeholder {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  color: #4f647c;
-  font-size: 0.66rem;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  background:
-    repeating-linear-gradient(
-      135deg,
-      #edf3f9,
-      #edf3f9 16px,
-      #e3ebf3 16px,
-      #e3ebf3 32px
-    );
-  border: 1px dashed #8ea5bb;
-}
-
-.visual-tile.is-placeholder::after { display: none; }
-
 @media (max-width: 1100px) {
   .proof-band,
   .systems-strip,
   .page-hero-metrics,
   .cap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cb-media { min-height: 31rem; }
-  .visual-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 980px) {
@@ -1611,8 +1611,7 @@ h1 {
   .systems-strip,
   .page-hero-metrics,
   .sustainability-table,
-  .cta-panel,
-  .visual-grid { grid-template-columns: 1fr; }
+  .cta-panel { grid-template-columns: 1fr; }
 
   .cta-side {
     border-left: 0;
@@ -1703,7 +1702,7 @@ h1 {
 .projects-hero {
   background:
     var(--hero-shell-gradient),
-    url("assets/images/want-to-see-more.jpg");
+    url("assets/images/project-experience.jpg");
   background-size: cover;
   background-position: center 34%;
 }
@@ -3011,6 +3010,292 @@ h1 {
   border-color: rgba(84, 104, 126, 0.55);
 }
 
+/* Service And Careers Pages */
+.services-hero {
+  background:
+    var(--hero-shell-gradient),
+    url("assets/images/structural-steel.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.services-hero::before,
+.careers-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--hero-grid-overlay);
+  background-size: var(--hero-grid-size);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.services-hero .container,
+.careers-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.services-hero-structural {
+  background:
+    var(--hero-shell-gradient),
+    url("assets/images/projects/commercial-bay-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.services-hero-mechanical {
+  background:
+    var(--hero-shell-gradient),
+    url("assets/images/mechanical.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.services-hero-infrastructure {
+  background:
+    var(--hero-shell-gradient),
+    url("assets/images/projects/hub-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.services-hero-marine {
+  background:
+    var(--hero-shell-gradient),
+    url("assets/images/infra.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.careers-hero {
+  background:
+    var(--hero-shell-gradient),
+    url("assets/images/safety-wellbeing.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.services-main,
+.careers-main {
+  background:
+    linear-gradient(180deg, rgba(31, 95, 147, 0.08), rgba(31, 95, 147, 0.02)),
+    #edf4fb;
+}
+
+.service-link-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-1);
+}
+
+.service-link-card {
+  min-height: 18rem;
+  display: grid;
+  align-content: end;
+  gap: 0.55rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(120, 146, 170, 0.42);
+  border-top: 3px solid rgba(31, 95, 147, 0.84);
+  padding: var(--space-2);
+  color: #eef5fd;
+  background:
+    linear-gradient(180deg, rgba(8, 14, 22, 0.12), rgba(8, 14, 22, 0.84)),
+    #172433;
+  box-shadow: 0 10px 20px rgba(8, 16, 25, 0.14);
+  transition: transform 180ms var(--ease), box-shadow 180ms linear;
+}
+
+.service-link-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--service-image);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.58;
+  z-index: 0;
+  transition: transform 240ms linear, opacity 180ms linear;
+}
+
+.service-link-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(9, 16, 24, 0.08), rgba(9, 16, 24, 0.82)),
+    linear-gradient(to right, rgba(31, 95, 147, 0.16), rgba(175, 47, 50, 0.14));
+  z-index: 1;
+}
+
+.service-link-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+.service-link-card:hover,
+.service-link-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 26px rgba(8, 16, 25, 0.2);
+}
+
+.service-link-card:hover::before,
+.service-link-card:focus-visible::before {
+  transform: scale(1.04);
+  opacity: 0.72;
+}
+
+.service-link-card span {
+  color: #c6d9ec;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.service-link-card h2 {
+  color: #f3f8fd;
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+}
+
+.service-link-card p {
+  color: #d5e4f1;
+  line-height: 1.5;
+}
+
+.service-link-card-structural { --service-image: url("assets/images/structural-steel.jpg"); }
+.service-link-card-mechanical { --service-image: url("assets/images/mechanical.jpeg"); }
+.service-link-card-infrastructure { --service-image: url("assets/images/infrastructure.jpg"); }
+.service-link-card-marine { --service-image: url("assets/images/infra.jpg"); }
+
+.service-proof-panel {
+  margin-top: var(--space-2);
+  border-top: 3px solid rgba(175, 47, 50, 0.74);
+}
+
+.service-proof-panel h2,
+.careers-panel h2 {
+  color: #1b344c;
+  font-size: clamp(1.45rem, 3vw, 2.1rem);
+}
+
+.service-proof-list {
+  margin-top: var(--space-1);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.service-proof-list li {
+  border: 1px solid rgba(100, 126, 151, 0.35);
+  background: #f3f8fd;
+  padding: 0.9rem;
+  color: #38516a;
+}
+
+.service-proof-list strong {
+  color: #172f47;
+}
+
+.service-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
+  gap: var(--space-2);
+  align-items: stretch;
+}
+
+.service-detail-copy {
+  border-top: 3px solid rgba(31, 95, 147, 0.74);
+}
+
+.service-aside {
+  border: 1px solid rgba(100, 126, 151, 0.42);
+  border-top: 3px solid rgba(175, 47, 50, 0.76);
+  background: #101821;
+  color: #d9e8f6;
+  display: grid;
+}
+
+.service-aside img {
+  width: 100%;
+  height: 100%;
+  min-height: 22rem;
+  object-fit: cover;
+}
+
+.service-aside-note {
+  border-top: 1px solid rgba(180, 203, 226, 0.24);
+  padding: 0.95rem;
+  background: rgba(13, 23, 34, 0.94);
+}
+
+.conversion-strip {
+  margin-top: var(--space-2);
+  border: 1px solid rgba(91, 116, 140, 0.42);
+  border-top: 3px solid rgba(31, 95, 147, 0.78);
+  background:
+    linear-gradient(135deg, rgba(12, 22, 33, 0.94), rgba(18, 39, 58, 0.9) 54%, rgba(72, 27, 34, 0.84)),
+    #101821;
+  color: #e8f3ff;
+  padding: var(--space-2);
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.conversion-strip p {
+  margin-right: auto;
+  color: #d4e3f1;
+  font-weight: 600;
+}
+
+.conversion-strip .text-link {
+  color: #dcecff;
+  border-bottom-color: rgba(220, 236, 255, 0.45);
+}
+
+.careers-panel {
+  border-top: 3px solid rgba(31, 95, 147, 0.78);
+}
+
+@media (max-width: 1100px) {
+  .service-link-grid,
+  .service-proof-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .service-link-grid,
+  .service-proof-list,
+  .service-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conversion-strip {
+    align-items: stretch;
+  }
+
+  .conversion-strip p {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
 /* Contact Page */
 .contact-page .reveal {
   transition: opacity 240ms linear, transform 240ms linear;
@@ -3103,6 +3388,24 @@ h1 {
 
 .contact-form .btn-primary {
   justify-self: start;
+}
+
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-status {
+  min-height: 1.4rem;
+  color: #29435b;
+  font-size: 0.88rem;
+}
+
+.form-status.is-error {
+  color: #9c2b2b;
 }
 
 .contact-split {
@@ -3491,7 +3794,7 @@ h1 {
 }
 
 .capabilities-page .capabilities-domains .capability-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .capability-sector-summary {

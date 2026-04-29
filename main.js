@@ -6,6 +6,9 @@ const pageAnchorLinks = navLinks.filter((link) => {
   return href.startsWith("#");
 });
 const progressBar = document.getElementById("progressBar");
+const motionQuery = window.matchMedia
+  ? window.matchMedia("(prefers-reduced-motion: reduce)")
+  : { matches: false };
 const sections = pageAnchorLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
@@ -64,6 +67,13 @@ const onFrame = () => {
 
 const reveals = [...document.querySelectorAll(".reveal")];
 
+if (motionQuery.matches) {
+  document.querySelectorAll("video[autoplay]").forEach((video) => {
+    video.removeAttribute("autoplay");
+    video.pause();
+  });
+}
+
 if ("IntersectionObserver" in window && reveals.length) {
   const observer = new IntersectionObserver(
     (entries) => {
@@ -94,6 +104,10 @@ const initHeroMetricsCount = () => {
   const runCount = (el) => {
     const target = Number(el.dataset.countTarget || "0");
     const start = Number(el.dataset.countStart || "0");
+    if (motionQuery.matches) {
+      el.textContent = String(target);
+      return;
+    }
     const duration = 700;
     const startTime = performance.now();
 
@@ -201,6 +215,7 @@ const initProjectsCarousels = () => {
     let timerId = 0;
     const restartAutoScroll = () => {
       window.clearInterval(timerId);
+      if (motionQuery.matches) return;
       timerId = window.setInterval(() => {
         setActive(activeIndex + 1);
       }, 4600);
@@ -238,4 +253,67 @@ const initProjectsCarousels = () => {
 
 initProjectsCarousels();
 
+const initContactForms = () => {
+  const forms = [...document.querySelectorAll("[data-contact-form]")];
+  if (!forms.length) return;
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  forms.forEach((form) => {
+    const status = form.querySelector(".form-status");
+    const setStatus = (message, isError = false) => {
+      if (!status) return;
+      status.textContent = message;
+      status.classList.toggle("is-error", isError);
+    };
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const data = new FormData(form);
+      const honeypot = String(data.get("website") || "").trim();
+      if (honeypot) {
+        setStatus("Thanks, your enquiry has been received.");
+        form.reset();
+        return;
+      }
+
+      const name = String(data.get("name") || "").trim();
+      const email = String(data.get("email") || "").trim();
+      const phone = String(data.get("phone") || "").trim();
+      const company = String(data.get("company") || "").trim();
+      const message = String(data.get("message") || "").trim();
+
+      if (!name || !email || !message) {
+        setStatus("Please add your name, email, and project message.", true);
+        return;
+      }
+
+      if (!emailPattern.test(email)) {
+        setStatus("Please enter a valid email address.", true);
+        return;
+      }
+
+      const subject = encodeURIComponent(`CH Steel project enquiry from ${name}`);
+      const body = encodeURIComponent(
+        [
+          `Name: ${name}`,
+          `Email: ${email}`,
+          phone ? `Phone: ${phone}` : "",
+          company ? `Company: ${company}` : "",
+          "",
+          "Project message:",
+          message,
+        ]
+          .filter(Boolean)
+          .join("\n")
+      );
+
+      setStatus("Opening your email client to send the enquiry.");
+      window.location.href = `mailto:info@chsteel.co.nz?subject=${subject}&body=${body}`;
+    });
+  });
+};
+
+initContactForms();
 
