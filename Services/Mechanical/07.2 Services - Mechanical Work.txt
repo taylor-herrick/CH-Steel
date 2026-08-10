@@ -1,0 +1,199 @@
+<style>
+.page-section:has(.chMechanicalProof){
+  min-height:0!important;
+  padding-top:0!important;
+  padding-bottom:0!important;
+}
+
+.page-section:has(.chMechanicalProof) .content-wrapper{
+  min-height:0!important;
+  padding-top:0!important;
+  padding-bottom:0!important;
+}
+
+.page-section:has(.chMechanicalProof) .fluid-engine{
+  min-height:0!important;
+}
+
+.chMechanicalProof{
+  width:100%;
+  font-family:'Barlow','Segoe UI',system-ui,sans-serif;
+  color:#101820;
+}
+
+.chMechanicalProof,
+.chMechanicalProof *{
+  box-sizing:border-box;
+  min-width:0;
+}
+
+.chMechanicalProof-head{
+  margin-bottom:clamp(22px,3vw,36px);
+}
+
+.chMechanicalProof-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 14px;
+  font:800 12px/1.2 'Barlow','Segoe UI',system-ui,sans-serif;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:#b87a2c;
+}
+
+.chMechanicalProof-eyebrow::before{
+  content:"";
+  width:34px;
+  height:2px;
+  background:currentColor;
+  flex:0 0 34px;
+}
+
+.chMechanicalProof-title,
+.chMechanicalProof h3{
+  margin:0;
+  font-family:'Rajdhani','Arial Narrow',sans-serif;
+  font-weight:700;
+  line-height:1.03;
+  letter-spacing:.01em;
+  text-transform:uppercase;
+  color:#101820;
+}
+
+.chMechanicalProof-title{
+  font-size:clamp(34px,4.4vw,62px);
+}
+
+.chMechanicalProof-feature{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  border:1px solid rgba(16,24,32,.13);
+  background:#fff;
+}
+
+.chMechanicalProof-media{
+  min-height:360px;
+  position:relative;
+  overflow:hidden;
+  background:#1f5871;
+}
+
+.chMechanicalProof-media img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
+
+.chMechanicalProof-media::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:linear-gradient(
+    180deg,
+    rgba(16,24,32,.05),
+    rgba(16,24,32,.38)
+  );
+}
+
+.chMechanicalProof-body{
+  padding:clamp(28px,4vw,54px);
+}
+
+.chMechanicalProof h3{
+  font-size:clamp(30px,3.4vw,48px);
+  max-width:14ch;
+  margin-top:18px;
+}
+
+.chMechanicalProof-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.chMechanicalProof-chip{
+  display:inline-flex;
+  align-items:center;
+  min-height:32px;
+  padding:0 14px;
+  border:1px solid rgba(16,24,32,.16);
+  border-radius:999px;
+  font:800 12px/1 'Barlow','Segoe UI',system-ui,sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#4d5f68;
+  white-space:nowrap;
+}
+
+.chMechanicalProof-chip.is-red{
+  border-color:#bf2d31;
+  background:#bf2d31;
+  color:#fff;
+}
+
+.chMechanicalProof-copy{
+  margin:28px 0 0;
+  max-width:52ch;
+  font-size:16px;
+  line-height:1.65;
+  color:#61727b;
+}
+
+@media(max-width:820px){
+  .chMechanicalProof-feature{
+    grid-template-columns:1fr;
+  }
+
+  .chMechanicalProof-media{
+    min-height:260px;
+  }
+}
+</style>
+
+<div class="chMechanicalProof">
+  <div class="chMechanicalProof-head">
+    <p class="chMechanicalProof-eyebrow">Selected work</p>
+    <h2 class="chMechanicalProof-title">Mechanical in the field</h2>
+  </div>
+
+  <div class="chMechanicalProof-feature">
+    <div class="chMechanicalProof-media">
+      <img
+        src="https://raw.githubusercontent.com/taylor-herrick/CH-Steel/main/assets/images/Barge-to-Tauranga-3-1024x768.jpg"
+        alt="Marstel storage tank being transported from Whangārei to Tauranga"
+        loading="lazy"
+        decoding="async"
+      >
+    </div>
+
+    <div class="chMechanicalProof-body">
+      <div class="chMechanicalProof-chips">
+        <span class="chMechanicalProof-chip is-red">Storage tanks</span>
+      </div>
+
+      <h3>Eight tanks, delivered from workshop to terminal</h3>
+
+      <div class="chMechanicalProof-chips" style="margin-top:24px">
+        <span class="chMechanicalProof-chip">8 storage tanks</span>
+        <span class="chMechanicalProof-chip">Design &amp; fabrication</span>
+        <span class="chMechanicalProof-chip">Piping &amp; walkways</span>
+        <span class="chMechanicalProof-chip">Tauranga</span>
+      </div>
+
+      <p class="chMechanicalProof-copy">
+        Culham designed, fabricated and erected eight storage tanks for Marstel
+        Terminals in Tauranga, ranging from 9 m × 12 m to 12 m × 12 m.
+        Fabricating the tanks in Whangārei and shipping them to site reduced cost
+        and improved the programme, followed by installation of the associated
+        piping and access walkways.
+      </p>
+    </div>
+  </div>
+</div>

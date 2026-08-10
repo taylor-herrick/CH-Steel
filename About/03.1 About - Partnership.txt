@@ -1,0 +1,178 @@
+<style>
+.chsAboutPartner{font-family:'Barlow',sans-serif;color:#101820;--blue:#1f5871;--red:#bf2d31;--muted:#5b6770;--line:#d8e0e5;width:100%;max-width:1180px;margin:0 auto}
+.chsAboutPartner *{box-sizing:border-box;min-width:0}
+.chsAboutPartner h2,.chsAboutPartner h3{font-family:'Rajdhani',sans-serif;font-weight:700;text-transform:uppercase;line-height:1.03;letter-spacing:.01em;margin:0;overflow-wrap:normal;word-break:normal}
+.chsAboutPartner p{margin:0}
+section:has(.chsAboutPartner),section:has(.chsAboutPartner) .content-wrapper{min-height:0!important;padding-top:0!important;padding-bottom:0!important}
+
+.chsAboutPartner-wrap{background:transparent!important;padding:clamp(18px,3vw,34px) 0!important;text-align:left}
+
+.chsAboutPartner-top{display:grid;grid-template-columns:minmax(360px,.95fr) minmax(0,1fr);gap:clamp(34px,5vw,76px);align-items:center;margin-bottom:clamp(32px,4vw,54px)}
+.chsAboutPartner-proof{display:grid;grid-template-columns:minmax(150px,.42fr) minmax(220px,.58fr);gap:clamp(18px,3vw,34px);align-items:stretch}
+
+.chsAboutPartner-stat b{display:block;font-family:'Rajdhani',sans-serif;font-size:clamp(64px,7vw,108px);font-weight:700;line-height:.9;color:var(--red)}
+.chsAboutPartner-stat span{display:block;font:800 13px/1.25 'Barlow',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#101820;margin-top:16px;white-space:nowrap}
+.chsAboutPartner-stat p{font-size:15px;line-height:1.58;color:var(--muted);margin:20px 0 0;max-width:35ch}
+
+.chsAboutPartner-map img{display:block;width:min(150%,250px);height:auto;max-height:350px;filter:drop-shadow(0 18px 26px rgba(16,24,32,.16))}
+
+.chsAboutPartner-copy .ey{display:flex;align-items:center;gap:12px;margin:0 0 16px;color:var(--red);font:800 12px/1.2 'Barlow',sans-serif;letter-spacing:.22em;text-transform:uppercase}
+.chsAboutPartner-copy .ey::before{content:"";width:34px;height:2px;background:currentColor;flex:0 0 34px}
+.chsAboutPartner h2{font-size:clamp(34px,4.2vw,64px);max-width:15ch}
+.chsAboutPartner-copy p{font-size:clamp(16px,1.2vw,18px);line-height:1.62;color:var(--muted);max-width:50ch;margin:20px 0 0}
+
+.chsAboutPartner-strip{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;margin-bottom:clamp(20px,3vw,30px)}
+.chsAboutPartner-strip b{display:flex;align-items:center;gap:12px;font:800 12px/1.2 'Barlow',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#101820}
+.chsAboutPartner-strip b::before{content:"";width:42px;height:2px;background:#101820;flex:0 0 42px}
+.chsAboutPartner-strip span{font-size:14px;color:var(--muted);white-space:nowrap}
+
+.chsAboutPartner-profiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.chsAboutPartner-profile{--accent:var(--red);display:grid;grid-template-columns:minmax(150px,.38fr) minmax(0,.62fr);background:#fff;border:1px solid var(--line);min-height:560px}
+.chsAboutPartner-profile--herrick{--accent:var(--blue);grid-template-columns:minmax(0,.62fr) minmax(150px,.38fr)}
+.chsAboutPartner-img{position:relative;background:#dce5e9 center/cover no-repeat;min-height:100%}
+.chsAboutPartner-profile--herrick .chsAboutPartner-img{order:2}
+.chsAboutPartner-img::after{content:attr(data-tag);position:absolute;left:14px;top:14px;background:#101820;color:#fff;padding:8px 10px;font:800 10px/1 'Barlow',sans-serif;letter-spacing:.11em;text-transform:uppercase}
+.chsAboutPartner-card{padding:clamp(24px,3vw,38px);display:flex;flex-direction:column}
+.chsAboutPartner-card h3{font-size:clamp(28px,2.8vw,42px);color:#101820}
+.chsAboutPartner-mark{width:38px;height:3px;background:var(--accent);margin:18px 0 22px}
+.chsAboutPartner-card p{font-size:15.5px;line-height:1.62;color:var(--muted);margin:0}
+.chsAboutPartner-tags{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 28px}
+.chsAboutPartner-tags span{display:inline-flex;align-items:center;min-height:30px;border:1px solid var(--accent);border-radius:999px;color:var(--accent);padding:0 12px;font:800 10.5px/1.2 'Barlow',sans-serif;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.chsAboutPartner-list{display:grid;gap:15px;margin-top:auto;border-top:1px solid #e4eaee;padding-top:22px}
+.chsAboutPartner-list div{display:grid;grid-template-columns:14px minmax(0,1fr);gap:12px;align-items:start}.chsAboutPartner-list i{width:10px;height:10px;background:var(--accent);display:block;margin-top:6px}
+.chsAboutPartner-list span{font-size:14.5px;line-height:1.55;color:var(--muted);padding-top:0}
+
+@media(min-width:1500px){
+  .chsAboutPartner{max-width:1360px}
+  .chsAboutPartner-profile{min-height:600px}
+}
+
+@media(max-width:1120px){
+  .chsAboutPartner-profiles{grid-template-columns:1fr}
+  .chsAboutPartner-profile,.chsAboutPartner-profile--herrick{grid-template-columns:minmax(190px,.34fr) minmax(0,.66fr);min-height:500px}
+  .chsAboutPartner-profile--herrick .chsAboutPartner-img{order:0}
+}
+
+@media(max-width:900px){
+  .chsAboutPartner-top{grid-template-columns:1fr}
+  .chsAboutPartner-proof{max-width:680px}
+  .chsAboutPartner-strip{grid-template-columns:1fr}
+  .chsAboutPartner-strip span{white-space:normal;max-width:52ch}
+}
+
+@media(max-width:640px){
+  .chsAboutPartner-proof{grid-template-columns:1fr}
+  .chsAboutPartner-map{min-height:240px}
+  .chsAboutPartner-profile,.chsAboutPartner-profile--herrick{grid-template-columns:1fr;min-height:0}
+  .chsAboutPartner-img{min-height:280px}
+  .chsAboutPartner-card{padding:24px 18px}
+  .chsAboutPartner h2{font-size:clamp(34px,10vw,46px)}
+  .chsAboutPartner-stat span{white-space:normal}
+}
+
+.chsAboutPartner-certs{margin-top:clamp(36px,4vw,64px)}
+.chsAboutPartner-certs .ey{display:flex;align-items:center;gap:12px;margin:0 0 16px;color:var(--red);font:800 12px/1.2 'Barlow',sans-serif;letter-spacing:.22em;text-transform:uppercase}
+.chsAboutPartner-certs h2{font-size:clamp(26px,2.6vw,40px);margin:6px 0 18px}
+.chsAboutPartner-certsGrid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,48px)}
+@media(max-width:820px){.chsAboutPartner-certsGrid{grid-template-columns:1fr}}
+.chsAboutPartner-certsGrid h3{font-size:clamp(20px,1.6vw,26px);margin:0 0 8px}
+.chsAboutPartner-certsGrid ul{list-style:none;margin:0;padding:0}
+.chsAboutPartner-certsGrid li{padding:8px 0;border-bottom:1px solid rgba(16,24,32,.1);font-size:15px;line-height:1.5}
+</style>
+
+<div class="chsAboutPartner">
+  <section class="chsAboutPartner-wrap">
+    <div class="chsAboutPartner-top">
+      <div class="chsAboutPartner-proof">
+        <div class="chsAboutPartner-stat">
+          <b>10+</b>
+          <span>Years working together</span>
+          <p>Culham and Herrick have worked together on CH Steel delivery since 2015.</p>
+        </div>
+
+        <div class="chsAboutPartner-map" aria-label="New Zealand delivery graphic">
+          <img src="https://static1.squarespace.com/static/68ba43e4942f40118609f7d5/t/6a42f41187633d38354a9628/1782772753211/NZ.png" alt="New Zealand delivery footprint">
+        </div>
+      </div>
+
+      <div class="chsAboutPartner-copy">
+        <p class="ey">The partnership</p>
+        <h2>Strong partners. Steel delivered.</h2>
+        <p>New Zealand delivery strength, backed by international structural-steel depth.</p>
+      </div>
+    </div>
+
+    <div class="chsAboutPartner-profiles">
+      <article class="chsAboutPartner-profile">
+        <div class="chsAboutPartner-img" data-tag="Whangārei, NZ" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/cul-civic.jpg)"></div>
+        <div class="chsAboutPartner-card">
+          <h3>Culham Engineering</h3>
+          <div class="chsAboutPartner-mark"></div>
+          <p>Local heavy-engineering capability with fabrication, coatings, logistics and site delivery grounded in New Zealand project conditions.</p>
+          <div class="chsAboutPartner-tags">
+            <span>Local delivery base</span>
+            <span>Coatings + fabrication</span>
+            <span>Heavy logistics</span>
+            <span>Site support</span>
+          </div>
+          <div class="chsAboutPartner-list">
+            <div><i></i><span>New Zealand delivery base anchored by Whangārei capability.</span></div>
+            <div><i></i><span>Fabrication, protective coatings and heavy logistics coordinated locally.</span></div>
+            <div><i></i><span>Project delivery experience across commercial, civic, industrial and infrastructure work.</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="chsAboutPartner-profile chsAboutPartner-profile--herrick">
+        <div class="chsAboutPartner-img" data-tag="Fabrication facility" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/her-sales.jpg)"></div>
+        <div class="chsAboutPartner-card">
+          <h3>Herrick</h3>
+          <div class="chsAboutPartner-mark"></div>
+          <p>High-volume structural-steel fabrication capacity from The Herrick Corporation, one of the largest steel fabricators and erectors in the United States.</p>
+          <div class="chsAboutPartner-tags">
+            <span>Structural steel depth</span>
+            <span>High-rise scale</span>
+            <span>Delivery systems</span>
+            <span>Project control</span>
+          </div>
+          <div class="chsAboutPartner-list">
+            <div><i></i><span>Fabrication experience across major high-rise, civic, industrial and complex programmes.</span></div>
+            <div><i></i><span>Delivery systems and project controls supporting CH Steel's local execution.</span></div>
+            <div><i></i><span>International steel depth, delivered through a New Zealand-facing team.</span></div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="chsAboutPartner-certs">
+      <p class="ey">Certifications</p>
+      <h2>Independently certified on both sides</h2>
+      <div class="chsAboutPartner-certsGrid">
+        <div>
+          <h3>Culham Engineering</h3>
+          <ul>
+            <li>ISO 9001:2015, Telarc registered quality management, held since 1998</li>
+            <li>ISO 14001:2015, Telarc registered environmental management</li>
+            <li>ISO 45001, health and safety management</li>
+            <li>ISO 3834, IIW ANBCC welding quality</li>
+            <li>Steel Fabrication Certification (SFC)</li>
+            <li>Painting Contractor Certification Program (PCCP)</li>
+            <li>Sustainable Steel Council, Gold certification</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Herrick</h3>
+          <ul>
+            <li>ISO 9001:2015 quality management</li>
+            <li>AISC certified, steel building structures</li>
+            <li>ISO 3834 Part 2, international welding quality</li>
+            <li>EN 1090-1 (EXC2 and EXC3), European structural steel compliance</li>
+            <li>Steelwork Compliance Australia (SCA), CC3</li>
+            <li>Canadian Welding Bureau (CWB) certified</li>
+            <li>City of Los Angeles certified Type I fabricator</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

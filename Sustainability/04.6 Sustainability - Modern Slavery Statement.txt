@@ -1,0 +1,212 @@
+<style>
+.page-section:has(.ch-modern-statement) {
+  min-height: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.page-section:has(.ch-modern-statement) .content-wrapper,
+.page-section:has(.ch-modern-statement) .fluid-engine {
+  min-height: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.ch-modern-statement,
+.ch-modern-statement * {
+  box-sizing: border-box;
+}
+
+.ch-modern-statement {
+  --ch-ink: #101820;
+  --ch-copy: #43545d;
+  --ch-line: rgba(16, 24, 32, 0.18);
+  --ch-mint: #75f0c8;
+  --ch-red: #bf2d31;
+  width: 100%;
+  color: var(--ch-ink);
+  font-family: "Barlow", "Segoe UI", system-ui, sans-serif;
+}
+
+.ch-modern-statement__inner {
+  width: min(100% - 48px, 1030px);
+  margin: 0 auto;
+  padding: 80px 0 88px;
+}
+
+.ch-modern-statement__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 16px;
+  color: var(--ch-red);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.ch-modern-statement__eyebrow::before {
+  width: 34px;
+  height: 3px;
+  background: currentColor;
+  content: "";
+}
+
+.ch-modern-statement h1 {
+  max-width: 720px;
+  margin: 0 0 46px;
+  color: var(--ch-ink);
+  font-family: "Rajdhani", "Arial Narrow", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.ch-modern-statement__body {
+  max-width: 940px;
+  border-top: 4px solid var(--ch-mint);
+  padding-top: 38px;
+}
+
+.ch-modern-statement__body p {
+  margin: 0;
+  color: var(--ch-copy);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.ch-modern-statement__body p + p {
+  margin-top: 30px;
+}
+
+.ch-modern-statement__signatures {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 54px;
+  margin: 120px 0 0;
+  padding: 0;
+}
+
+.ch-modern-statement__signature {
+  min-width: 0;
+  margin: 0;
+}
+
+.ch-modern-statement__signature-art {
+  display: flex;
+  align-items: end;
+  height: 80px;
+  border-bottom: 3px solid var(--ch-ink);
+}
+
+.ch-modern-statement__signature-art img {
+  display: block;
+  max-width: 150%;
+  height: 500px;
+  object-fit: contain;
+  object-position: left bottom;
+  transform: translateY(90px);
+}
+
+.ch-modern-statement__signature--rob img {
+  width: 300px;
+}
+
+.ch-modern-statement__signature--robert img {
+  width: 100%;
+  max-width: 420px;
+  height: 230px;
+}
+
+.ch-modern-statement__signature figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 18px;
+  padding-top: 14px;
+  color: var(--ch-ink);
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.ch-modern-statement__signature-name {
+  font-weight: 700;
+}
+
+.ch-modern-statement__signature-date {
+  color: var(--ch-copy);
+}
+
+@media (max-width: 700px) {
+  .ch-modern-statement__inner {
+    width: min(100% - 36px, 1030px);
+    padding: 58px 0 64px;
+  }
+
+  .ch-modern-statement h1 {
+    margin-bottom: 34px;
+    font-size: 42px;
+  }
+
+  .ch-modern-statement__body {
+    padding-top: 28px;
+  }
+
+  .ch-modern-statement__body p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .ch-modern-statement__body p + p {
+    margin-top: 24px;
+  }
+
+  .ch-modern-statement__signatures {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    margin-top: 56px;
+  }
+}
+</style>
+
+<section class="ch-modern-statement" aria-labelledby="modern-slavery-statement-title">
+  <div class="ch-modern-statement__inner">
+    <p class="ch-modern-statement__eyebrow">CH Steel</p>
+    <h1 id="modern-slavery-statement-title">Modern Slavery Statement</h1>
+
+    <div class="ch-modern-statement__body">
+      <p>CH Steel is committed to respecting human rights and operating in a lawful, ethical, and responsible manner. We do not abide any form of modern slavery, forced labour, human trafficking, or worker exploitation within our operations or our supply chain.</p>
+
+      <p>Our workforce reflects the diverse communities in which we operate and brings a broad range of skills and experience to our business. We are committed to ensuring that all workers are employed freely, understand their terms and conditions of employment, are paid correctly, and are treated with dignity and respect. We comply with all relevant New Zealand employment, immigration, and health and safety legislation.</p>
+
+      <p>We maintain fair and transparent employment practices and take reasonable steps to identify and reduce the risk of modern slavery. This includes using reputable labour providers, maintaining clear employment policies, and working with suppliers and contractors who share our commitment to ethical conduct and lawful employment practices.</p>
+
+      <p>Our suppliers and subcontractors are expected to respect human rights and operate in accordance with applicable laws and accepted standards of ethical behaviour. We will continue to review our practices, support awareness across the business, and strengthen our approach as part of our ongoing commitment to responsible and sustainable operations.</p>
+    </div>
+
+    <div class="ch-modern-statement__signatures" aria-label="Statement approval">
+      <figure class="ch-modern-statement__signature ch-modern-statement__signature--rob">
+        <div class="ch-modern-statement__signature-art">
+          <img src="https://static1.squarespace.com/static/68ba43e4942f40118609f7d5/t/6a70bdd9fa119058d435fe86/1785773529232/Rob+Signature.png" alt="">
+        </div>
+        <figcaption>
+          <span class="ch-modern-statement__signature-name">Rob Kirwan, Director</span>
+          <span class="ch-modern-statement__signature-date">May 2026</span>
+        </figcaption>
+      </figure>
+
+      <figure class="ch-modern-statement__signature ch-modern-statement__signature--robert">
+        <div class="ch-modern-statement__signature-art">
+          <img src="https://static1.squarespace.com/static/68ba43e4942f40118609f7d5/t/6a70bdd93bbe2104ce952377/1785773529232/Bob+Signature.png" alt="">
+        </div>
+        <figcaption>
+          <span class="ch-modern-statement__signature-name">Robert Hazleton, Director</span>
+          <span class="ch-modern-statement__signature-date">May 2026</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>

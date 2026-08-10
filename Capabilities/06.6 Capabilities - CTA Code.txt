@@ -1,0 +1,5 @@
+<div class="chs chs-full acc-capabilities"><section class="chs-section is-dark"><div class="chs-wrap">
+<p class="chs-eyebrow is-ondark">Talk early</p>
+<h2 class="chs-h2 is-xl">Planning a steel package?</h2>
+<p class="chs-cta-p" style="margin-bottom:64px">Every control point above is cheapest to set before fabrication starts. Bring CH Steel in early.</p><div class="chs-actions"><a class="chs-btn" href="/contact">Start an enquiry <span class="chs-arr">&rsaquo;</span></a>
+</div></section></div>

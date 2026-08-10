@@ -1,0 +1,347 @@
+<style>
+.chSvc{
+  --font-display:'Rajdhani','Arial Narrow',sans-serif;
+  --font-body:'Barlow','Segoe UI',system-ui,sans-serif;
+  color:#101820;
+  font-family:var(--font-body);
+  -webkit-font-smoothing:antialiased
+}
+.chSvc,.chSvc *,.chSvc *::before,.chSvc *::after{
+  box-sizing:border-box;
+  min-width:0
+}
+.chSvc p{margin:0}
+.chSvc h2,.chSvc h3{
+  margin:0;
+  font-family:var(--font-display);
+  font-weight:700;
+  text-transform:uppercase;
+  line-height:1.03;
+  letter-spacing:.01em
+}
+
+.chSvc-full{
+  width:100vw;
+  max-width:100vw;
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw)
+}
+
+.page-section:has(.chSvc){
+  padding-top:0!important;
+  padding-bottom:0!important
+}
+.page-section:has(.chSvc) .content-wrapper{
+  padding-left:0!important;
+  padding-right:0!important;
+  max-width:none!important
+}
+.page-section:has(.chSvc) .fluid-engine{padding:0!important}
+.fe-block:has(.chSvc){margin:0!important}
+
+.chSvc-wrap{
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 clamp(20px,4vw,48px)
+}
+.chSvc-section{
+  background:transparent;
+  padding-block:clamp(18px,2.2vw,32px)
+}
+.chSvc-head{margin-bottom:clamp(22px,2.6vw,36px)}
+.chSvc-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 14px;
+  font:800 12px/1.2 var(--font-body);
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:#1f5871
+}
+.chSvc-eyebrow::before{
+  content:"";
+  width:34px;
+  height:2px;
+  background:currentColor;
+  flex:0 0 34px
+}
+.chSvc-h2{
+  font-size:clamp(30px,3.9vw,56px);
+  max-width:20ch
+}
+
+/* Card grid */
+.chSvc-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1px;
+  background:#d8e0e5;
+  border:1px solid #d8e0e5
+}
+.chSvc-card{
+  background:#fff;
+  min-height:500px;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  border-top:3px solid var(--_acc);
+  transition:background .15s ease
+}
+
+/* Project imagery */
+.chSvc-media{
+  position:relative;
+  height:clamp(165px,15vw,205px);
+  overflow:hidden;
+  flex:0 0 auto;
+  background:#101820
+}
+.chSvc-media::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    180deg,
+    rgba(16,24,32,.04) 35%,
+    rgba(16,24,32,.82) 100%
+  );
+  pointer-events:none
+}
+.chSvc-media img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  transition:transform .3s ease
+}
+.chSvc-card:hover .chSvc-media img{
+  transform:scale(1.045)
+}
+.chSvc-project{
+  position:absolute;
+  left:18px;
+  right:18px;
+  bottom:16px;
+  z-index:2;
+  color:#fff;
+  font:800 10px/1.25 var(--font-body);
+  letter-spacing:.12em;
+  text-transform:uppercase
+}
+
+/* Card content */
+.chSvc-body{
+  padding:clamp(22px,2.4vw,30px);
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  transition:background .15s ease
+}
+.chSvc-card:hover .chSvc-body{background:#f4f6f8}
+.chSvc-n{
+  font-family:var(--font-display);
+  font-weight:700;
+  font-size:16px;
+  color:var(--_acc);
+  letter-spacing:.12em
+}
+.chSvc-card h3{
+  font-size:clamp(20px,1.7vw,25px);
+  color:#101820;
+  margin:14px 0 12px
+}
+.chSvc-card p{
+  font:400 14px/1.55 var(--font-body);
+  color:#5b6770
+}
+.chSvc-list{
+  list-style:none;
+  margin:16px 0 0;
+  padding:16px 0 0;
+  border-top:1px solid #e6ebf0;
+  display:grid;
+  gap:9px
+}
+.chSvc-list li{
+  position:relative;
+  padding-left:16px;
+  font:600 12.5px/1.4 var(--font-body);
+  color:#42525d
+}
+.chSvc-list li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:6px;
+  width:7px;
+  height:7px;
+  background:var(--_acc)
+}
+.chSvc-more{
+  margin-top:auto;
+  padding-top:18px;
+  font:800 11px/1 var(--font-body);
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--_acc);
+  display:inline-flex;
+  gap:7px;
+  align-items:center;
+  text-decoration:none
+}
+.chSvc-card:hover .chSvc-more{color:#bf2d31}
+.chSvc-arr{
+  font-weight:700;
+  font-size:15px
+}
+
+/* Service colours */
+.chSvc-card:nth-child(1){--_acc:#2f8f9d}
+.chSvc-card:nth-child(2){--_acc:#1f5871}
+.chSvc-card:nth-child(3){--_acc:#bf2d31}
+.chSvc-card:nth-child(4){--_acc:#b0742f}
+
+@media(max-width:1080px){
+  .chSvc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .chSvc-media{height:220px}
+}
+@media(max-width:600px){
+  .chSvc-grid{grid-template-columns:1fr}
+  .chSvc-card{min-height:0}
+  .chSvc-media{height:220px}
+}
+</style>
+
+<div class="chSvc chSvc-full">
+  <section class="chSvc-section">
+    <div class="chSvc-wrap">
+
+      <div class="chSvc-head">
+        <p class="chSvc-eyebrow">What we do</p>
+        <h2 class="chSvc-h2">Four service lines. One delivery path.</h2>
+      </div>
+
+      <div class="chSvc-grid">
+
+        <!-- Marine -->
+        <article class="chSvc-card">
+          <div class="chSvc-media">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/68ba43e4942f40118609f7d5/20aa5666-3c5d-4acc-b05a-3b3ac40e39e5/Tenix-Lifts-June-07-002-1024x768.jpg?format=1500w"
+              alt="ANZAC frigate modules being handled by Culham Engineering"
+              loading="lazy"
+              decoding="async"
+            >
+            <span class="chSvc-project">Project · ANZAC Frigate</span>
+          </div>
+
+          <div class="chSvc-body">
+            <span class="chSvc-n">01</span>
+            <h3>Marine</h3>
+            <p>Wharves, jetties and coastal structures, plus construction, repairs and slipway work in corrosive environments.</p>
+
+            <ul class="chSvc-list">
+              <li>Marine construction &amp; repairs</li>
+              <li>Slipways</li>
+              <li>Corrosion-resistant steelwork</li>
+            </ul>
+
+            <a class="chSvc-more" href="/marine">
+              Explore <span class="chSvc-arr">&rsaquo;</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Infrastructure -->
+        <article class="chSvc-card">
+          <div class="chSvc-media">
+            <img
+              src="https://taylor-herrick.github.io/CH-Steel/assets/images/projects/panmure-bridge.jpg"
+              alt="Eastern Busway Panmure Bridge under construction in Auckland"
+              loading="lazy"
+              decoding="async"
+            >
+            <span class="chSvc-project">Project · Panmure Bridge</span>
+          </div>
+
+          <div class="chSvc-body">
+            <span class="chSvc-n">02</span>
+            <h3>Infrastructure</h3>
+            <p>Bridges, civic and transport structures, long-span and complex geometry delivered with full documentation.</p>
+
+            <ul class="chSvc-list">
+              <li>Bridges &amp; lattice spans</li>
+              <li>Civic &amp; transport</li>
+              <li>Precision cutting &amp; modelling</li>
+            </ul>
+
+            <a class="chSvc-more" href="/infrastructure">
+              Explore <span class="chSvc-arr">&rsaquo;</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Structural Steel -->
+        <article class="chSvc-card">
+          <div class="chSvc-media">
+            <img
+              src="https://taylor-herrick.github.io/CH-Steel/assets/images/projects/commercial-bay-2.jpg"
+              alt="Commercial Bay structural steel construction in Auckland"
+              loading="lazy"
+              decoding="async"
+            >
+            <span class="chSvc-project">Project · Commercial Bay</span>
+          </div>
+
+          <div class="chSvc-body">
+            <span class="chSvc-n">03</span>
+            <h3>Structural Steel</h3>
+            <p>High-rise, commercial and industrial frames, fabricated, coated and erected to programme.</p>
+
+            <ul class="chSvc-list">
+              <li>High-rise &amp; commercial</li>
+              <li>Industrial frames</li>
+              <li>Industrial coatings</li>
+            </ul>
+
+            <a class="chSvc-more" href="/structuralsteel">
+              Explore <span class="chSvc-arr">&rsaquo;</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Mechanical -->
+        <article class="chSvc-card">
+          <div class="chSvc-media">
+            <img
+              src="https://culham.co.nz/wp-content/uploads/2023/10/DJI_0361-HDR-e1696201031110-1600x600.jpg"
+              alt="Mount Maunganui VLSO storage tanks at Culham Engineering"
+              loading="lazy"
+              decoding="async"
+            >
+            <span class="chSvc-project">Project · VLSO Storage Tanks</span>
+          </div>
+
+          <div class="chSvc-body">
+            <span class="chSvc-n">04</span>
+            <h3>Mechanical</h3>
+            <p>Pressure vessels, piping systems and petrochemical maintenance—heavy engineering for plant and process.</p>
+
+            <ul class="chSvc-list">
+              <li>Pressure vessels &amp; piping</li>
+              <li>Tanks</li>
+              <li>Shutdown turnarounds: planning &amp; execution</li>
+            </ul>
+
+            <a class="chSvc-more" href="/mechanical">
+              Explore <span class="chSvc-arr">&rsaquo;</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</div>

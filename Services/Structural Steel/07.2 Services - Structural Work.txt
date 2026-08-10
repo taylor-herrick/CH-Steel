@@ -1,0 +1,57 @@
+<style>
+.page-section:has(.chStructuralProof){min-height:0!important;padding-top:0!important;padding-bottom:0!important}
+.page-section:has(.chStructuralProof) .content-wrapper{min-height:0!important;padding-top:0!important;padding-bottom:0!important}
+.page-section:has(.chStructuralProof) .fluid-engine{min-height:0!important}
+
+.chStructuralProof{width:100%;font-family:'Barlow','Segoe UI',system-ui,sans-serif;color:#101820}
+.chStructuralProof,.chStructuralProof *{box-sizing:border-box;min-width:0}
+.chStructuralProof-head{margin-bottom:clamp(22px,3vw,36px)}
+.chStructuralProof-eyebrow{display:inline-flex;align-items:center;gap:12px;margin:0 0 14px;font:800 12px/1.2 'Barlow','Segoe UI',system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#bf2d31}
+.chStructuralProof-eyebrow::before{content:"";width:34px;height:2px;background:currentColor;flex:0 0 34px}
+.chStructuralProof-title,.chStructuralProof h3{margin:0;font-family:'Rajdhani','Arial Narrow',sans-serif;font-weight:700;line-height:1.03;letter-spacing:.01em;text-transform:uppercase;color:#101820}
+.chStructuralProof-title{font-size:clamp(34px,4.4vw,62px)}
+.chStructuralProof-feature{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);border:1px solid rgba(16,24,32,.13);background:#fff}
+.chStructuralProof-media{min-height:390px;background:#1f5871 center/cover;position:relative}
+.chStructuralProof-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,24,32,.05),rgba(16,24,32,.44))}
+.chStructuralProof-num{position:absolute;left:24px;top:22px;z-index:2;font-family:'Rajdhani','Arial Narrow',sans-serif;font-size:clamp(48px,5vw,82px);font-weight:700;line-height:1;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.28)}
+.chStructuralProof-body{padding:clamp(28px,4vw,54px)}
+.chStructuralProof h3{font-size:clamp(30px,3.4vw,48px);max-width:15ch;margin-top:18px}
+.chStructuralProof-chips{display:flex;flex-wrap:wrap;gap:8px}
+.chStructuralProof-chip{display:inline-flex;align-items:center;min-height:32px;padding:0 14px;border:1px solid rgba(16,24,32,.16);border-radius:999px;font:800 12px/1 'Barlow','Segoe UI',system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#4d5f68;white-space:nowrap}
+.chStructuralProof-chip.is-red{border-color:#bf2d31;background:#bf2d31;color:#fff}
+.chStructuralProof-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:28px 0 22px;padding-top:22px;border-top:1px solid rgba(16,24,32,.13)}
+.chStructuralProof-stat{font-family:'Rajdhani','Arial Narrow',sans-serif;font-size:clamp(30px,3vw,44px);font-weight:700;line-height:1;color:#1f5871;text-transform:uppercase}
+.chStructuralProof-statcap{margin-top:8px;font-size:13px;line-height:1.45;color:#687882;font-weight:700}
+.chStructuralProof-copy{margin:28px 0 0;font-size:16px;line-height:1.65;color:#61727b;max-width:52ch}
+@media(max-width:820px){.chStructuralProof-feature{grid-template-columns:1fr}.chStructuralProof-media{min-height:280px}}
+</style>
+
+<div class="chStructuralProof" id="proof">
+  <div class="chStructuralProof-head">
+    <p class="chStructuralProof-eyebrow">Selected work</p>
+    <h2 class="chStructuralProof-title">Structural steel in the field</h2>
+  </div>
+
+  <div class="chStructuralProof-feature">
+    <div class="chStructuralProof-media" style="background-image:url('https://taylor-herrick.github.io/CH-Steel/assets/images/projects/commercial-bay-2.jpg')">
+      <div class="chStructuralProof-num">01</div>
+    </div>
+
+    <div class="chStructuralProof-body">
+      <div class="chStructuralProof-chips"><span class="chStructuralProof-chip is-red">Structural Steel</span></div>
+      <h3>High-rise CBD delivery, sequenced to the millimetre</h3>
+
+      <div class="chStructuralProof-stats">
+        <div><div class="chStructuralProof-stat">8,500 tonnes</div><div class="chStructuralProof-statcap">Structural steel package</div></div>
+        <div><div class="chStructuralProof-stat">39</div><div class="chStructuralProof-statcap">Storeys, high-rise CBD delivery</div></div>
+      </div>
+
+      <div class="chStructuralProof-chips">
+        <span class="chStructuralProof-chip">Welded perimeter frame</span>
+        <span class="chStructuralProof-chip">Steel lift cores</span>
+      </div>
+
+      <p class="chStructuralProof-copy">Commercial Bay shows the CH Steel structural model in the field: tonnage, sequencing and connection design delivered under complex Auckland CBD constraints.</p>
+    </div>
+  </div>
+</div>

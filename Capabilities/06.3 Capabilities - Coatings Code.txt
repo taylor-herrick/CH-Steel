@@ -1,0 +1,19 @@
+<div class="chs chs-full acc-capabilities"><section class="chs-section"><div class="chs-wrap">
+<div class="chs-split">
+<div>
+<p class="chs-eyebrow is-blue">Protective coatings</p>
+<h2 class="chs-h2">Coatings planned in, not bolted on</h2>
+<p class="chs-lead">Protective coatings are part of CH Steel's end-to-end service: specified and sequenced from the start.</p>
+<p class="chs-text">Planning the coating system before handling, dispatch and installation protects durability, avoids rework on site and keeps the steel performing for the life of the asset.</p>
+</div>
+<div class="chs-panel">
+<h3>Coatings scope</h3>
+<ul class="chs-panel-list">
+<li>Coating system matched to environment and durability requirements</li>
+<li>Surface preparation and application controlled to specification</li>
+<li>Sequenced with fabrication, transport and lifting to avoid damage</li>
+<li>Inspection and records carried through to site handover</li>
+</ul>
+</div>
+</div>
+</div></section></div>

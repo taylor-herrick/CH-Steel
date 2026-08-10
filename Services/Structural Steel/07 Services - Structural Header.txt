@@ -1,0 +1,29 @@
+<style>
+.page-section:has(.chStructuralHero){min-height:0!important;padding-top:0!important;padding-bottom:0!important}
+.page-section:has(.chStructuralHero) .content-wrapper{min-height:0!important;padding-top:0!important;padding-bottom:0!important}
+.page-section:has(.chStructuralHero) .fluid-engine{min-height:0!important}
+
+.chStructuralHero{width:100%;font-family:'Barlow','Segoe UI',system-ui,sans-serif;color:#fff}
+.chStructuralHero,.chStructuralHero *{box-sizing:border-box;min-width:0}
+.chStructuralHero-eyebrow{display:inline-flex;align-items:center;gap:12px;margin:0 0 18px;font:800 12px/1.2 'Barlow','Segoe UI',system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#f15d61;}
+.chStructuralHero-eyebrow::before{content:"";width:34px;height:2px;background:currentColor;flex:0 0 34px}
+.chStructuralHero-title{margin:0;max-width:15ch;font-family:'Rajdhani','Arial Narrow',sans-serif;font-size:clamp(42px,5.4vw,78px);font-weight:700;line-height:1.02;letter-spacing:.01em;text-transform:uppercase;color:#fff}
+.chStructuralHero-lead{margin:24px 0 34px;max-width:62ch;font-size:clamp(16px,1.25vw,20px);line-height:1.58;color:rgba(255,255,255,.86)}
+.chStructuralHero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.chStructuralHero-btn,.chStructuralHero-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 28px;font:800 13px/1 'Barlow','Segoe UI',system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;white-space:nowrap;transition:transform .12s ease,box-shadow .12s ease,background .12s ease,color .12s ease}
+.chStructuralHero-btn{background:#bf2d31;color:#fff;border:2px solid #bf2d31;box-shadow:5px 5px 0 #7a1d20}
+.chStructuralHero-btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 #7a1d20}
+.chStructuralHero-ghost{background:transparent;color:#fff;border:2px solid #fff;box-shadow:5px 5px 0 rgba(255,255,255,.85)}
+.chStructuralHero-ghost:hover{background:#fff;color:#101820;transform:translate(2px,2px);box-shadow:3px 3px 0 rgba(255,255,255,.85)}
+.chStructuralHero-arr{font-weight:700;font-size:15px}
+@media(max-width:560px){.chStructuralHero-actions{display:grid;grid-template-columns:1fr}.chStructuralHero-btn,.chStructuralHero-ghost{width:100%}}
+</style>
+
+<div class="chStructuralHero">
+  <p class="chStructuralHero-eyebrow">Structural Steel</p>
+  <h1 class="chStructuralHero-title">Frames that carry the build</h1>
+  <p class="chStructuralHero-lead">High-rise, commercial and industrial steel frames, fabricated, coated and erected to programme, with the whole package owned end to end.</p>
+  <div class="chStructuralHero-actions">
+    <a class="chStructuralHero-btn" href="/contact">Start an enquiry <span class="chStructuralHero-arr">&rsaquo;</span></a>
+  </div>
+</div>

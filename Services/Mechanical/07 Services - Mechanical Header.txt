@@ -1,0 +1,6 @@
+<!-- CH STEEL · MECHANICAL · Hero (on-dark; SET A DARK SECTION BACKGROUND natively) — requires site-wide CH-Steel.css. -->
+<div class="chs chs-full acc-mechanical"><section class="chs-section on-dark" style="padding-block:clamp(36px,5vw,72px)"><div class="chs-wrap">
+<p class="chs-eyebrow is-blue">Mechanical</p>
+<h1 class="chs-h1 is-md">Steel that keeps plant running</h1>
+<p class="chs-lead">Pressure vessels, piping, tanks and process steelwork, fabricated and maintained through shutdowns, turnarounds and daily operations.</p>
+</div></section></div>

@@ -1,0 +1,5 @@
+<div class="chs chs-full acc-marine"><section class="chs-section on-dark" style="padding-block:clamp(36px,5vw,72px)"><div class="chs-wrap">
+<p class="chs-eyebrow is-blue">Marine</p>
+<h1 class="chs-h1 is-md">Steel that holds the coast</h1>
+<p class="chs-lead">Wharves, jetties, slipways and coastal structures, fabricated, coated and erected for salt air and tidal load, with corrosion designed out from the first drawing.</p>
+</div></section></div>

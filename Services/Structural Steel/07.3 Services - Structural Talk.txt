@@ -1,0 +1,30 @@
+<style>
+.page-section:has(.chStructuralCta){min-height:0!important;padding-top:0!important;padding-bottom:0!important}
+.page-section:has(.chStructuralCta) .content-wrapper{min-height:0!important;padding-top:0!important;padding-bottom:0!important}
+.page-section:has(.chStructuralCta) .fluid-engine{min-height:0!important}
+
+.chStructuralCta{width:100%;font-family:'Barlow','Segoe UI',system-ui,sans-serif;color:#fff}
+.chStructuralCta,.chStructuralCta *{box-sizing:border-box;min-width:0}
+.chStructuralCta-eyebrow{display:inline-flex;align-items:center;gap:12px;margin:0 0 18px;font:800 12px/1.2 'Barlow','Segoe UI',system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#f15d61}
+.chStructuralCta-eyebrow::before{content:"";width:34px;height:2px;background:currentColor;flex:0 0 34px}
+.chStructuralCta-title{margin:0;max-width:18ch;font-family:'Rajdhani','Arial Narrow',sans-serif;font-size:clamp(34px,4.8vw,68px);font-weight:700;line-height:1.03;letter-spacing:.01em;text-transform:uppercase;color:#fff}
+.chStructuralCta-copy{margin:22px 0 32px;max-width:58ch;font-size:17px;line-height:1.6;color:rgba(255,255,255,.82)}
+.chStructuralCta-actions{display:flex;flex-wrap:wrap;gap:14px}
+.chStructuralCta-btn,.chStructuralCta-phone{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 28px;font:800 13px/1 'Barlow','Segoe UI',system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;white-space:nowrap;transition:transform .12s ease,box-shadow .12s ease,background .12s ease,color .12s ease}
+.chStructuralCta-btn{background:#bf2d31;color:#fff;border:2px solid #bf2d31;box-shadow:5px 5px 0 #7a1d20}
+.chStructuralCta-btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 #7a1d20}
+.chStructuralCta-phone{background:transparent;color:#fff;border:2px solid #fff;box-shadow:5px 5px 0 rgba(255,255,255,.85)}
+.chStructuralCta-phone:hover{background:#fff;color:#101820;transform:translate(2px,2px);box-shadow:3px 3px 0 rgba(255,255,255,.85)}
+.chStructuralCta-arr{font-weight:700;font-size:15px}
+@media(max-width:560px){.chStructuralCta-actions{display:grid;grid-template-columns:1fr}.chStructuralCta-btn,.chStructuralCta-phone{width:100%}}
+</style>
+
+<div class="chStructuralCta">
+  <p class="chStructuralCta-eyebrow">Talk early</p>
+  <h2 class="chStructuralCta-title">Planning a structural steel package?</h2>
+  <p class="chStructuralCta-copy">Connection design, coatings and erection sequence lock early. Test them with CH Steel first.</p>
+
+  <div class="chStructuralCta-actions">
+    <a class="chStructuralCta-btn" href="/contact">Start an enquiry <span class="chStructuralCta-arr">&rsaquo;</span></a>
+  </div>
+</div>

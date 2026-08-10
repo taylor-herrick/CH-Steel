@@ -1,0 +1,13 @@
+<div class="chs chs-full acc-capabilities"><section class="chs-section"><div class="chs-wrap">
+<div class="chs-head is-split">
+<div><p class="chs-eyebrow is-blue">Control points</p><h2 class="chs-h2">Capability, coordinated into delivery</h2></div>
+</div>
+<div class="chs-steps">
+<article class="chs-step"><span class="chs-step-n">01 / Early</span><b>Buildability and value options</b><p>Scope, access, lifting, programme and steel strategy tested before the package hardens.</p></article>
+<article class="chs-step"><span class="chs-step-n">02 / Digital</span><b>Modelling and shop drawings</b><p>Fabrication-ready information aligned with release sequence and site needs.</p></article>
+<article class="chs-step"><span class="chs-step-n">03 / Production</span><b>High-volume fabrication</b><p>Material flow, fit-up, welding, inspection and records controlled through the workshop.</p></article>
+<article class="chs-step"><span class="chs-step-n">04 / Protection</span><b>Coatings and durability</b><p>Protective systems planned before handling, dispatch and installation reduce site rework.</p></article>
+<article class="chs-step"><span class="chs-step-n">05 / Logistics</span><b>Laydown, haulage and heavy lift</b><p>Loads sequenced to the site, not just shipped when steel is complete.</p></article>
+<article class="chs-step"><span class="chs-step-n">06 / Site</span><b>Erection methodology</b><p>Access, cranes, safety and installation sequence connected to the upstream plan.</p></article>
+</div>
+</div></section></div>

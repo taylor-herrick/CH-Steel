@@ -1,0 +1,81 @@
+<div class="chs chs-full acc-projects">
+<section class="chs-section" style="padding-bottom:80px">
+<div class="chs-wrap">
+<div class="chs-head">
+<p class="chs-eyebrow">Partner project depth</p>
+<h2 class="chs-h2">Partner delivery highlights.</h2>
+<p class="chs-lead" style="margin-top:12px">CH Steel combines Culham's New Zealand heavy-engineering capability with Herrick's international structural-steel depth. One company, owned 50/50 by Culham Engineering and The Herrick Corporation, carrying each package from start to finish.</p>
+</div>
+
+<div class="chs-partners">
+
+<div class="chs-partner is-herrick">
+<div class="chs-partner-head">
+<h3>Herrick</h3>
+</div>
+<div class="chs-partner-cards">
+
+<div class="chs-pcard">
+<div class="chs-pcard-img" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/her-sales.jpg)"></div>
+<div class="chs-pcard-copy">
+<b>The Salesforce Tower</b>
+<span>San Francisco, USA</span>
+</div>
+</div>
+
+<div class="chs-pcard">
+<div class="chs-pcard-img" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/her-sofi.jpg)"></div>
+<div class="chs-pcard-copy">
+<b>SoFi Stadium</b>
+<span>Inglewood, USA</span>
+</div>
+</div>
+
+<div class="chs-pcard">
+<div class="chs-pcard-img" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/her-181.jpg)"></div>
+<div class="chs-pcard-copy">
+<b>181 Fremont</b>
+<span>San Francisco, USA</span>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="chs-partner is-culham">
+<div class="chs-partner-head">
+<h3>Culham</h3>
+</div>
+<div class="chs-partner-cards">
+
+<div class="chs-pcard">
+<div class="chs-pcard-img" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/ikea-1.jpg)"></div>
+<div class="chs-pcard-copy">
+<b>IKEA Auckland</b>
+<span>Auckland, New Zealand</span>
+</div>
+</div>
+
+<div class="chs-pcard">
+<div class="chs-pcard-img" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/bowen-1.jpg)"></div>
+<div class="chs-pcard-copy">
+<b>Bowen Campus Redevelopment</b>
+<span>Wellington, New Zealand</span>
+</div>
+</div>
+
+<div class="chs-pcard">
+<div class="chs-pcard-img" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/cul-civic.jpg)"></div>
+<div class="chs-pcard-copy">
+<b>Whangārei Civic Centre</b>
+<span>Whangārei, New Zealand</span>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+</div>

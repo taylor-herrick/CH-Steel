@@ -1,0 +1,145 @@
+<style>
+.page-section:has(.chMechanicalCta){
+  min-height:0!important;
+  padding-top:0!important;
+  padding-bottom:0!important;
+}
+
+.page-section:has(.chMechanicalCta) .content-wrapper{
+  min-height:0!important;
+  padding-top:0!important;
+  padding-bottom:0!important;
+}
+
+.page-section:has(.chMechanicalCta) .fluid-engine{
+  min-height:0!important;
+}
+
+.chMechanicalCta{
+  width:100%;
+  font-family:'Barlow','Segoe UI',system-ui,sans-serif;
+  color:#fff;
+}
+
+.chMechanicalCta,
+.chMechanicalCta *{
+  box-sizing:border-box;
+  min-width:0;
+}
+
+.chMechanicalCta-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 18px;
+  font:800 12px/1.2 'Barlow','Segoe UI',system-ui,sans-serif;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:#f15d61;
+}
+
+.chMechanicalCta-eyebrow::before{
+  content:"";
+  width:34px;
+  height:2px;
+  background:currentColor;
+  flex:0 0 34px;
+}
+
+.chMechanicalCta-title{
+  margin:0;
+  max-width:18ch;
+  font-family:'Rajdhani','Arial Narrow',sans-serif;
+  font-size:clamp(34px,4.8vw,68px);
+  font-weight:700;
+  line-height:1.03;
+  letter-spacing:.01em;
+  text-transform:uppercase;
+  color:#fff;
+}
+
+.chMechanicalCta-copy{
+  margin:22px 0 32px;
+  max-width:58ch;
+  font-size:17px;
+  line-height:1.6;
+  color:rgba(255,255,255,.82);
+}
+
+.chMechanicalCta-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.chMechanicalCta-btn,
+.chMechanicalCta-phone{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  min-height:50px;
+  padding:0 28px;
+  font:800 13px/1 'Barlow','Segoe UI',system-ui,sans-serif;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  text-decoration:none;
+  white-space:nowrap;
+  cursor:pointer;
+  transition:transform .12s ease,box-shadow .12s ease,background .12s ease,color .12s ease;
+}
+
+.chMechanicalCta-btn{
+  background:#bf2d31;
+  color:#fff;
+  border:2px solid #bf2d31;
+  box-shadow:5px 5px 0 #7a1d20;
+}
+
+.chMechanicalCta-btn:hover{
+  transform:translate(2px,2px);
+  box-shadow:3px 3px 0 #7a1d20;
+}
+
+.chMechanicalCta-phone{
+  background:transparent;
+  color:#fff;
+  border:2px solid #fff;
+  box-shadow:5px 5px 0 rgba(255,255,255,.85);
+}
+
+.chMechanicalCta-phone:hover{
+  background:#fff;
+  color:#101820;
+  transform:translate(2px,2px);
+  box-shadow:3px 3px 0 rgba(255,255,255,.85);
+}
+
+.chMechanicalCta-arr{
+  font-weight:700;
+  font-size:15px;
+}
+
+@media(max-width:560px){
+  .chMechanicalCta-actions{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  .chMechanicalCta-btn,
+  .chMechanicalCta-phone{
+    width:100%;
+  }
+}
+</style>
+
+<div class="chMechanicalCta">
+  <p class="chMechanicalCta-eyebrow">Talk early</p>
+  <h2 class="chMechanicalCta-title">Planning a mechanical steel package?</h2>
+
+  <p class="chMechanicalCta-copy">Maintenance access is a fabrication decision. Make it before the scope closes.</p>
+
+  <div class="chMechanicalCta-actions">
+    <a class="chMechanicalCta-btn" href="/contact">Start an enquiry <span class="chMechanicalCta-arr">&rsaquo;</span></a>
+  </div>
+</div>

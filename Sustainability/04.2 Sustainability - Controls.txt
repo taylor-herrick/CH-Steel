@@ -1,0 +1,77 @@
+<style>
+.chsSustainOps{font-family:'Barlow',sans-serif;color:#101820;--green:#18713d;--mint:#75f0c8;--navy:#101820;--muted:#5b6770;width:100%;max-width:1180px;margin:0 auto}
+.chsSustainOps *{box-sizing:border-box;min-width:0}
+.chsSustainOps h2,
+.chsSustainOps h3{font-family:'Rajdhani',sans-serif;font-weight:700;text-transform:uppercase;line-height:1.03;letter-spacing:.01em;margin:0;overflow-wrap:break-word;text-wrap:balance}
+.chsSustainOps p{margin:0}
+section:has(.chsSustainOps),
+section:has(.chsSustainOps) .content-wrapper{min-height:0!important;padding-top:0!important;padding-bottom:0!important}
+.chsSustainOps-wrap{background:transparent!important;padding:clamp(16px,2.6vw,30px) 0!important;text-align:left!important}
+.chsSustainOps-head{display:grid;grid-template-columns:minmax(0,.9fr) minmax(260px,.56fr);gap:clamp(24px,4vw,54px);align-items:end;margin:0 0 clamp(22px,3vw,36px);padding-left:18px;border-left:4px solid var(--green)}
+.chsSustainOps-ey{display:flex;align-items:center;gap:12px;margin:0 0 14px;color:var(--green);font:800 12px/1.2 'Barlow',sans-serif;letter-spacing:.22em;text-transform:uppercase}
+.chsSustainOps-ey::before{content:"";width:34px;height:2px;background:currentColor;flex:0 0 34px}
+.chsSustainOps h2{font-size:clamp(30px,3.6vw,52px);max-width:18ch;color:var(--navy)}
+.chsSustainOps-lead{font-size:clamp(15px,1.08vw,17px);line-height:1.6;color:var(--muted)}
+.chsSustainOps-grid{display:grid;grid-template-columns:minmax(300px,.78fr) minmax(0,1fr);gap:18px;align-items:stretch}
+.chsSustainOps-image{min-height:420px;background:linear-gradient(180deg,rgba(16,24,32,0) 44%,rgba(16,24,32,.7)),url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/hub-1.jpg) center/cover no-repeat;position:relative}
+.chsSustainOps-image span{position:absolute;left:0;bottom:0;background:var(--green);color:#fff;padding:10px 14px;font:800 10px/1 'Barlow',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.chsSustainOps-list{display:grid;grid-template-columns:1fr;gap:1px;background:#d8e0e5;border:1px solid #d8e0e5}
+.chsSustainOps-card{background:#fff;padding:clamp(20px,2.4vw,30px);display:grid;grid-template-columns:54px minmax(0,1fr);gap:18px;align-items:start}
+.chsSustainOps-card .n{font-family:'Rajdhani',sans-serif;font-size:34px;font-weight:700;line-height:.9;color:var(--green)}
+.chsSustainOps-card h3{font-size:clamp(22px,1.8vw,28px);color:var(--navy);margin-bottom:8px}
+.chsSustainOps-card p{font-size:15px;line-height:1.58;color:var(--muted)}
+@media(min-width:1500px){
+.chsSustainOps{max-width:1360px}
+.chsSustainOps-image{min-height:460px}
+}
+@media(max-width:1040px){
+.chsSustainOps-head,
+.chsSustainOps-grid{grid-template-columns:1fr}
+.chsSustainOps-image{min-height:340px}
+}
+@media(max-width:680px){
+.chsSustainOps-head{padding-left:14px}
+.chsSustainOps-image{min-height:260px}
+.chsSustainOps-card{grid-template-columns:42px minmax(0,1fr);gap:14px;padding:20px 18px}
+.chsSustainOps-card .n{font-size:28px}
+}
+</style>
+<div class="chsSustainOps">
+<section class="chsSustainOps-wrap">
+<div class="chsSustainOps-head">
+<div>
+<p class="chsSustainOps-ey">Operating controls</p>
+<h2>Make the checks visible</h2>
+</div>
+<p class="chsSustainOps-lead">Responsibility you can actually ask about. Safety, quality and durability, handled in the open.</p>
+</div>
+<div class="chsSustainOps-grid">
+<div class="chsSustainOps-image">
+<span>Safety and quality</span>
+</div>
+<div class="chsSustainOps-list">
+<article class="chsSustainOps-card">
+<div class="n">01</div>
+<div>
+<h3>Safety built in</h3>
+<p>Access, handling and lift sequence are settled before crews face avoidable risk.</p>
+</div>
+</article>
+<article class="chsSustainOps-card">
+<div class="n">02</div>
+<div>
+<h3>Quality records</h3>
+<p>Welding, inspection and documentation controlled across the package, not just at closeout.</p>
+</div>
+</article>
+<article class="chsSustainOps-card">
+<div class="n">03</div>
+<div>
+<h3>Long-life decisions</h3>
+<p>Durability, coatings and repairability decided while the project can still be shaped.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+</div>

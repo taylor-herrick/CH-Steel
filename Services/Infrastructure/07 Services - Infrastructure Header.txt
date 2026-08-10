@@ -1,0 +1,29 @@
+<!-- CH STEEL · INFRASTRUCTURE · Hero — movable Squarespace-safe version -->
+<style>
+.page-section:has(.chInfraHero){min-height:0!important;padding-top:0!important;padding-bottom:0!important}
+.page-section:has(.chInfraHero) .content-wrapper{min-height:0!important;padding-top:0!important;padding-bottom:0!important}
+.page-section:has(.chInfraHero) .fluid-engine{min-height:0!important}
+
+.chInfraHero{width:100%;font-family:'Barlow','Segoe UI',system-ui,sans-serif;color:#fff}
+.chInfraHero,.chInfraHero *{box-sizing:border-box;min-width:0}
+.chInfraHero-eyebrow{display:inline-flex;align-items:center;gap:12px;margin:0 0 18px;font:800 12px/1.2 'Barlow','Segoe UI',system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#1f5871}
+.chInfraHero-eyebrow::before{content:"";width:34px;height:2px;background:currentColor;flex:0 0 34px}
+.chInfraHero-title{margin:0;max-width:15ch;font-family:'Rajdhani','Arial Narrow',sans-serif;font-size:clamp(42px,5.4vw,78px);font-weight:700;line-height:1.02;letter-spacing:.01em;text-transform:uppercase;color:#fff}
+.chInfraHero-lead{margin:24px 0 34px;max-width:62ch;font-size:clamp(16px,1.25vw,20px);line-height:1.58;color:rgba(255,255,255,.86)}
+.chInfraHero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.chInfraHero-btn,.chInfraHero-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 28px;font:800 13px/1 'Barlow','Segoe UI',system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;white-space:nowrap;transition:transform .12s ease,box-shadow .12s ease,background .12s ease,color .12s ease}
+.chInfraHero-btn{background:#bf2d31;color:#fff;border:2px solid #bf2d31;box-shadow:5px 5px 0 #7a1d20}
+.chInfraHero-btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 #7a1d20}
+.chInfraHero-ghost{background:transparent;color:#fff;border:2px solid #fff;box-shadow:5px 5px 0 rgba(255,255,255,.85)}
+.chInfraHero-ghost:hover{background:#fff;color:#101820;transform:translate(2px,2px);box-shadow:3px 3px 0 rgba(255,255,255,.85)}
+.chInfraHero-arr{font-weight:700;font-size:15px}
+@media(max-width:560px){.chInfraHero-actions{display:grid;grid-template-columns:1fr}.chInfraHero-btn,.chInfraHero-ghost{width:100%}}
+</style>
+
+<div class="chInfraHero">
+  <p class="chInfraHero-eyebrow">Infrastructure</p>
+  <h1 class="chInfraHero-title">Long-span steel, civic scale</h1>
+  <p class="chInfraHero-lead">Bridges, civic landmarks and transport structures, detailed for complex geometry and delivered with full documentation from model to site.</p>
+  <div class="chInfraHero-actions">
+  </div>
+</div>

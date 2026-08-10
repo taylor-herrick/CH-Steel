@@ -1,0 +1,5 @@
+<div class="chs chs-full acc-projects"><section class="chs-section on-dark" style="padding-block:clamp(36px,5vw,72px)"><div class="chs-wrap">
+<p class="chs-eyebrow">Featured projects</p>
+<h1 class="chs-h1 is-md">High-consequence steel delivery with engineered control.</h1>
+<p class="chs-lead">These projects show how CH Steel converts scale, risk, and multi-party complexity into controlled delivery outcomes across commercial, civic, and infrastructure environments.</p>
+</div></section></div>

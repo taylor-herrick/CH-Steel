@@ -1,0 +1,175 @@
+<style>
+.chs.acc-projects .chs-cdesc{margin-bottom:34px}
+.chs.acc-projects .chs-ctags{margin-bottom:30px}
+.chs.acc-projects .chs-cstats{grid-template-columns:repeat(3,minmax(0,1fr))}
+.chs.acc-projects .chs-cstats b{word-break:normal;overflow-wrap:normal;hyphens:none;white-space:normal}
+.chs.acc-projects .chs-cstats div{min-width:0}
+</style>
+
+<div class="chs chs-full acc-projects">
+<section class="chs-section">
+<div class="chs-wrap">
+<div class="chs-cases">
+
+<article class="chs-case">
+<div class="chs-cmedia">
+<div class="chs-cslides">
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/commercial-bay-1.jpg);background-position:center top"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/commercial-bay-2.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/commercial-bay-3.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/commercial-bay-4.png)"></div>
+</div>
+<span class="chs-cnum">01</span>
+<span class="chs-clabel">Commercial Bay</span>
+<div class="chs-cdots"><i></i><i></i><i></i><i></i></div>
+</div>
+
+<div class="chs-cbody">
+<p class="chs-eyebrow">Project 01</p>
+<h3>Commercial Bay</h3>
+<div class="chs-cstats">
+<div><b>8,500 tonnes</b><em>Structural steel package delivered</em></div>
+<div><b>39 Storeys</b><em>Tower scale in central Auckland</em></div>
+<div><b>A NZ First</b><em>Height and complexity milestone</em></div>
+</div>
+<p class="chs-cdesc">Commercial Bay demonstrates CH Steel's integrated model in a constrained Auckland CBD environment: approximately 8,500T of structural steel, a 39-storey tower, welded braced perimeter frame, steel lift cores, and advanced erection sequencing ahead of concrete floor plates.</p>
+<p class="chs-cclient">Client: Fletcher Construction</p>
+<div class="chs-ccats">
+<div class="chs-ctags">
+<span>Constructability-led planning</span>
+<span>Constrained urban logistics</span>
+<span>Quality &amp; safety control</span>
+</div>
+</div>
+</div>
+</article>
+
+<article class="chs-case">
+<div class="chs-cmedia">
+<div class="chs-cslides">
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/nzicc-1.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/nzicc-2.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/nzicc-3.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/nzicc-4.jpg)"></div>
+</div>
+<span class="chs-cnum">02</span>
+<span class="chs-clabel">NZICC</span>
+<div class="chs-cdots"><i></i><i></i><i></i><i></i></div>
+</div>
+
+<div class="chs-cbody">
+<p class="chs-eyebrow">Project 02</p>
+<h3>NZ International Convention Centre</h3>
+<div class="chs-cstats">
+<div><b>8,500 tonnes</b><em>Herrick fabricated package</em></div>
+<div></div>
+<div><b>NZ-Scale</b><em>Largest columns and trusses in country context</em></div>
+</div>
+<p class="chs-cdesc">NZICC brought Herrick and Culham Engineering together through CH Steel for a major fabricated steel package, including some of New Zealand's largest columns and trusses, delivered through tightly coordinated urban sequencing.</p>
+<p class="chs-cclient">Client: Fletcher Construction</p>
+<div class="chs-ctags">
+<span>High-interface coordination</span>
+<span>Complex transfer structures</span>
+<span>Staged delivery sequencing</span>
+<span>Programme-critical execution</span>
+</div>
+</div>
+</article>
+
+<article class="chs-case">
+<div class="chs-cmedia">
+<div class="chs-cslides">
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/madden-1.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/madden-2.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/madden-3.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/madden-4.jpg)"></div>
+</div>
+<span class="chs-cnum">03</span>
+<span class="chs-clabel">Madden Street</span>
+<div class="chs-cdots"><i></i><i></i><i></i><i></i></div>
+</div>
+
+<div class="chs-cbody">
+<p class="chs-eyebrow">Project 03</p>
+<h3>Madden Street</h3>
+<div class="chs-cstats">
+<div><b>1,585 tonnes</b><em>Structural steel package</em></div>
+<div><b>Aligned</b><em>Trade and temporary works interface planning</em></div>
+<div><b>Reliable</b><em>Predictable delivery rhythm in constrained access</em></div>
+</div>
+<p class="chs-cdesc">Madden Street combined mixed-use structural requirements with tight programme coordination in a fast-moving central Auckland development zone.</p>
+<p class="chs-cclient">Client: LT McGuinness</p>
+<div class="chs-ctags">
+<span>Urban mixed-use delivery</span>
+<span>Interface-first detailing</span>
+<span>Quality-controlled installation</span>
+</div>
+</div>
+</article>
+
+<article class="chs-case">
+<div class="chs-cmedia">
+<div class="chs-cslides">
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/west-1.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/west-2.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/west-3.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/west-4.jpg)"></div>
+</div>
+<span class="chs-cnum">04</span>
+<span class="chs-clabel">Westfield</span>
+<div class="chs-cdots"><i></i><i></i><i></i><i></i></div>
+</div>
+
+<div class="chs-cbody">
+<p class="chs-eyebrow">Project 04</p>
+<h3>Westfield</h3>
+<div class="chs-cstats">
+<div><b>4,500 tonnes</b><em>Structural steel package</em></div>
+<div><b>Precise</b><em>Tight tolerances through fabrication and install</em></div>
+<div><b>Controlled</b><em>Disciplined risk management at each handover</em></div>
+</div>
+<p class="chs-cdesc">Westfield required high-volume steel packages to integrate with active retail and public-access interfaces while maintaining certainty across programme milestones.</p>
+<p class="chs-cclient">Client: Scentre Group</p>
+<div class="chs-ctags">
+<span>Live-environment constraints</span>
+<span>Night &amp; off-peak logistics</span>
+<span>Public interface management</span>
+<span>Construction-stage certainty</span>
+</div>
+</div>
+</article>
+
+<article class="chs-case">
+<div class="chs-cmedia">
+<div class="chs-cslides">
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/hub-1.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/hub-2.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/hub-3.jpg)"></div>
+<div class="chs-cslide" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/hub-4.jpg)"></div>
+</div>
+<span class="chs-cnum">05</span>
+<span class="chs-clabel">Auckland Transport Hub</span>
+<div class="chs-cdots"><i></i><i></i><i></i><i></i></div>
+</div>
+
+<div class="chs-cbody">
+<p class="chs-eyebrow">Project 05</p>
+<h3>Auckland Transport Hub</h3>
+<div class="chs-cstats">
+<div><b>1,200 tonnes</b><em>Herrick fabricated package</em></div>
+<div><b>Integrated</b><em>Cross-discipline civil and structural planning</em></div>
+</div>
+<p class="chs-cdesc">Auckland Transport Hub demanded infrastructure-grade sequencing, possession-window precision, and dependable coordination across multiple delivery interfaces.</p>
+<p class="chs-cclient">Client: ICON</p>
+<div class="chs-ctags">
+<span>Infrastructure-grade control</span>
+<span>Possession-window delivery</span>
+<span>High-consequence staging</span>
+</div>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+</div>

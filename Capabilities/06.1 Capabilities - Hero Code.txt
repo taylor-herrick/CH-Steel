@@ -1,0 +1,6 @@
+<div class="chs chs-full acc-capabilities"><section class="chs-section on-dark" style="padding-block:clamp(36px,5vw,72px)"><div class="chs-wrap">
+<p class="chs-eyebrow is-blue">Capabilities</p>
+<h1 class="chs-h1 is-md">Capacity planned into the job</h1>
+<p class="chs-lead">How planning, detailing, fabrication, coatings, logistics and erection connect.</p>
+<div class="chs-actions"><a class="chs-btn" href="/contact">Start an enquiry <span class="chs-arr">&rsaquo;</span></a>
+</div></section></div>

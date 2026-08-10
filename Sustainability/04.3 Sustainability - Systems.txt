@@ -1,0 +1,87 @@
+<style>
+.chsSustainSystems{font-family:'Barlow',sans-serif;color:#101820;--green:#18713d;--navy:#101820;--muted:#5b6770;width:100%;max-width:1180px;margin:0 auto}
+.chsSustainSystems *{box-sizing:border-box;min-width:0}
+.chsSustainSystems h2,
+.chsSustainSystems h3{font-family:'Rajdhani',sans-serif;font-weight:700;text-transform:uppercase;line-height:1.03;letter-spacing:.01em;margin:0;overflow-wrap:break-word;text-wrap:balance}
+.chsSustainSystems p{margin:0}
+section:has(.chsSustainSystems),
+section:has(.chsSustainSystems) .content-wrapper{min-height:0!important;padding-top:0!important;padding-bottom:0!important}
+.chsSustainSystems-wrap{background:transparent!important;padding:clamp(16px,2.6vw,30px) 0!important;text-align:left!important}
+.chsSustainSystems-head{display:grid;grid-template-columns:minmax(0,.9fr) minmax(260px,.56fr);gap:clamp(24px,4vw,54px);align-items:end;margin:0 0 clamp(22px,3vw,36px);padding-left:18px;border-left:4px solid var(--green)}
+.chsSustainSystems-ey{display:flex;align-items:center;gap:12px;margin:0 0 14px;color:var(--green);font:800 12px/1.2 'Barlow',sans-serif;letter-spacing:.22em;text-transform:uppercase}
+.chsSustainSystems-ey::before{content:"";width:34px;height:2px;background:currentColor;flex:0 0 34px}
+.chsSustainSystems h2{font-size:clamp(30px,3.6vw,52px);max-width:19ch;color:var(--navy)}
+.chsSustainSystems-lead{font-size:clamp(15px,1.08vw,17px);line-height:1.6;color:var(--muted)}
+.chsSustainSystems-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+.chsSustainSystems-step{background:#fff;border:1px solid #d8e0e5;display:flex;flex-direction:column;min-height:100%}
+.chsSustainSystems-img{aspect-ratio:4/5;min-height:280px;background:#1b2731 center/cover no-repeat;position:relative}
+.chsSustainSystems-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,24,32,0) 42%,rgba(16,24,32,.66))}
+.chsSustainSystems-img span{position:absolute;left:0;bottom:0;z-index:1;background:var(--green);color:#fff;padding:9px 12px;font:800 10px/1 'Barlow',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.chsSustainSystems-copy{padding:22px 22px 26px;display:grid;gap:10px}
+.chsSustainSystems-copy b{font-family:'Rajdhani',sans-serif;font-size:clamp(22px,1.8vw,28px);line-height:1.05;text-transform:uppercase;color:var(--navy)}
+.chsSustainSystems-copy p{font-size:15px;line-height:1.58;color:var(--muted)}
+.chsSustainSystems-rule{height:3px;width:48px;background:var(--green);margin-top:2px}
+@media(min-width:1500px){
+.chsSustainSystems{max-width:1360px}
+.chsSustainSystems-flow{gap:20px}
+.chsSustainSystems-img{min-height:330px}
+}
+@media(max-width:1040px){
+.chsSustainSystems-head{grid-template-columns:1fr}
+.chsSustainSystems-flow{grid-template-columns:1fr}
+.chsSustainSystems-step{display:grid;grid-template-columns:minmax(220px,.38fr) minmax(0,.62fr)}
+.chsSustainSystems-img{aspect-ratio:auto;min-height:260px}
+}
+@media(max-width:680px){
+.chsSustainSystems-head{padding-left:14px}
+.chsSustainSystems-step{display:block}
+.chsSustainSystems-img{aspect-ratio:5/4;min-height:230px}
+.chsSustainSystems-copy{padding:20px 18px 24px}
+}
+</style>
+<div class="chsSustainSystems">
+<section class="chsSustainSystems-wrap">
+<div class="chsSustainSystems-head">
+<div>
+<p class="chsSustainSystems-ey">Integrated systems</p>
+<h2>Plan. Produce. Deliver responsibly</h2>
+</div>
+<p class="chsSustainSystems-lead">An operating system, not a values sidebar. Responsibility designed into the schedule at every stage.</p>
+</div>
+<div class="chsSustainSystems-flow">
+<article class="chsSustainSystems-step">
+<div class="chsSustainSystems-img" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/madden-1.jpg)">
+<span>Early choices</span>
+</div>
+<div class="chsSustainSystems-copy">
+<div class="chsSustainSystems-rule">
+</div>
+<b>Reduce impact at conception</b>
+<p>Constructability, design optimisation and material efficiency are settled early, before fabrication locks choices in.</p>
+</div>
+</article>
+<article class="chsSustainSystems-step">
+<div class="chsSustainSystems-img" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/commercial-bay-2.jpg)">
+<span>Fabrication</span>
+</div>
+<div class="chsSustainSystems-copy">
+<div class="chsSustainSystems-rule">
+</div>
+<b>Responsible fabrication</b>
+<p>Precision workflows, waste minimisation and quality-controlled fabrication decisions.</p>
+</div>
+</article>
+<article class="chsSustainSystems-step">
+<div class="chsSustainSystems-img" style="background-image:url(https://taylor-herrick.github.io/CH-Steel/assets/images/projects/hub-2.jpg)">
+<span>Logistics</span>
+</div>
+<div class="chsSustainSystems-copy">
+<div class="chsSustainSystems-rule">
+</div>
+<b>Smarter logistics</b>
+<p>Sequenced transport and integrated staging cut site disruption, executed safety-first under programme pressure.</p>
+</div>
+</article>
+</div>
+</section>
+</div>

@@ -1,0 +1,18 @@
+<div class="chs chs-full acc-capabilities"><section class="chs-section"><div class="chs-wrap">
+<div class="chs-head is-split">
+<div><p class="chs-eyebrow is-blue">Workshop to site</p>
+<h2 class="chs-h2"><h2 class="chs-h2">Proof across the delivery path</h2>
+</h2></div>
+<p class="chs-lead">Fabrication, coatings, logistics and site delivery shown as connected stages of the same steel package.</p>
+</div>
+<div class="chs-gallery">
+<figure class="chs-gtile" style="background-image:url('IMG_BASE/cap-mechanical.jpg')"><span class="chs-stamp">Fabrication</span></figure>
+<figure class="chs-gtile" style="background-image:url('IMG_BASE/cap-fitup.jpg')"><span class="chs-stamp">Fit-up</span></figure>
+<figure class="chs-gtile" style="background-image:url('IMG_BASE/cap-install.jpg')"><span class="chs-stamp">Coatings</span></figure>
+<figure class="chs-gtile" style="background-image:url('IMG_BASE/cap-safety.jpg')"><span class="chs-stamp">Heavy lift</span></figure>
+<figure class="chs-gtile" style="background-image:url('IMG_BASE/cap-quality.jpg')"><span class="chs-stamp">Logistics</span></figure>
+<figure class="chs-gtile" style="background-image:url('IMG_BASE/cap-heavy-lift.jpg')"><span class="chs-stamp">Site erection</span></figure>
+<figure class="chs-gtile" style="background-image:url('IMG_BASE/cap-technical.jpg')"><span class="chs-stamp">Inspection</span></figure>
+<figure class="chs-gtile" style="background-image:url('IMG_BASE/cap-handover.jpg')"><span class="chs-stamp">Handover</span></figure>
+</div>
+</div></section></div>

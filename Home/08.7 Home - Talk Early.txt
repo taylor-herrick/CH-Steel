@@ -1,0 +1,33 @@
+<style>
+.chCta{--font-display:'Rajdhani','Arial Narrow',sans-serif;--font-body:'Barlow','Segoe UI',system-ui,sans-serif;color:#fff;font-family:var(--font-body);-webkit-font-smoothing:antialiased}
+.chCta,.chCta *,.chCta *::before,.chCta *::after{box-sizing:border-box;min-width:0}
+.chCta p{margin:0}
+.chCta h2{margin:0;font-family:var(--font-display);font-weight:700;text-transform:uppercase;line-height:1.03;letter-spacing:.01em}
+.chCta a{text-decoration:none}
+.chCta-full{width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+.page-section:has(.chCta){padding-top:0!important;padding-bottom:0!important}
+.page-section:has(.chCta) .content-wrapper{padding-left:0!important;padding-right:0!important;max-width:none!important}
+.page-section:has(.chCta) .fluid-engine{padding:0!important}
+.fe-block:has(.chCta){margin:0!important}
+.chCta-wrap{position:relative;width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+.chCta-eyebrow{display:flex;width:fit-content;align-items:center;gap:12px;margin:0 0 28px;font:800 12px/1.2 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#f15d61}.chCta-eyebrow::before{content:"";width:34px;height:2px;background:currentColor;flex:0 0 34px}
+.chCta-h2{color:#fff;font-size:clamp(32px,4.4vw,62px);max-width:18ch}
+.chCta .chCta-p{font:400 17px/1.6 var(--font-body);color:rgba(255,255,255,.8);max-width:56ch;margin:5px 0 40px}.chCta-btn,.chCta-btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 28px;font:800 13px/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease,background .12s ease,color .12s ease}
+.chCta-btn{background:#bf2d31;color:#fff;border:2px solid #bf2d31;box-shadow:5px 5px 0 #7a1d20}
+.chCta-btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 #7a1d20}
+.chCta-btn-ghost{background:transparent;color:#fff;border:2px solid #fff;box-shadow:5px 5px 0 rgba(255,255,255,.85)}
+.chCta-btn-ghost:hover{background:#fff;color:#101820;transform:translate(2px,2px);box-shadow:3px 3px 0 rgba(255,255,255,.85)}
+.chCta-arr{font-weight:700;font-size:15px}
+</style>
+<div class="chCta chCta-full">
+<section class="chCta-section">
+<div class="chCta-bg" style="background-image:url('IMG_BASE/commercial-bay-3.jpg')"></div>
+<div class="chCta-wrap">
+<p class="chCta-eyebrow">Talk early</p>
+<h2 class="chCta-h2">Bring steel planning in before assumptions become expensive.</h2>
+<p class="chCta-p">The most useful CH Steel conversation happens before drawings, procurement, transport and lift plans are locked.</p>
+<div class="chCta-actions">
+<a class="chCta-btn" href="/contact">Start an enquiry <span class="chCta-arr">&rsaquo;</span></a></div>
+</div>
+</section>
+</div>

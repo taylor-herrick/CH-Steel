@@ -1,0 +1,61 @@
+ <style>
+.chHer{--font-display:'Rajdhani','Arial Narrow',sans-serif;--font-body:'Barlow','Segoe UI',system-ui,sans-serif;color:#101820;font-family:var(--font-body);-webkit-font-smoothing:antialiased}
+.chHer,.chHer *,.chHer *::before,.chHer *::after{box-sizing:border-box;min-width:0}
+.chHer p{margin:0}
+.chHer h2,.chHer h3{margin:0;font-family:var(--font-display);font-weight:700;text-transform:uppercase;line-height:1.03;letter-spacing:.01em}
+.chHer b{font-weight:700}
+.chHer-full{width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+.page-section:has(.chHer){padding-top:0!important;padding-bottom:0!important}
+.page-section:has(.chHer) .content-wrapper{padding-left:0!important;padding-right:0!important;max-width:none!important}
+.page-section:has(.chHer) .fluid-engine{padding:0!important}
+.fe-block:has(.chHer){margin:0!important}
+.chHer-wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+.chHer-section{background:transparent;padding-top:clamp(18px,2.2vw,32px);padding-bottom:0;overflow-x:clip}
+.chHer-head{margin-bottom:clamp(22px,2.6vw,36px)}
+.chHer-eyebrow{display:inline-flex;align-items:center;gap:12px;margin:0 0 14px;font:800 12px/1.2 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#bf2d31}
+.chHer-eyebrow::before{content:"";width:34px;height:2px;background:currentColor;flex:0 0 34px}
+.chHer-h2{font-size:clamp(30px,3.9vw,56px);max-width:24ch}
+.chHer-media{position:relative;aspect-ratio:24/7;min-height:190px;background:#1b2731 center/cover;margin-bottom:clamp(22px,2.6vw,34px)}
+.chHer-media .chHer-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,24,32,.04) 42%,rgba(16,24,32,.55))}
+.chHer-media .chHer-stamp{position:absolute;left:0;bottom:0}
+.chHer-media .chHer-stamp b{display:inline-block;font:800 11px/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:#fff;padding:11px 15px;background:rgba(16,24,32,.78);border-top:3px solid #e23a3e}
+.chHer-duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.chHer-one{background:#fff;padding:clamp(24px,2.6vw,34px)}
+.chHer-one.chHer-h{border-left:1px solid #d8e0e5}
+.chHer-meta{display:block;margin:0 0 22px;padding-bottom:6px;font:800 13px/1.2 var(--font-body);letter-spacing:.24em;text-transform:uppercase;text-shadow:.35px 0 0 currentColor}.chHer-one h3{font-size:clamp(20px,1.7vw,25px);color:#101820}
+.chHer-one p{font:400 14.5px/1.6 var(--font-body);color:#5b6770;margin-top:11px}
+.chHer-join{background:#101820;color:#fff;margin-top:clamp(34px,4vw,56px);padding:clamp(30px,4.5vw,56px) 0;width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+.chHer-join-in{max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+.chHer-join-accent{border-left:4px solid #e23a3e;padding-left:24px;font:500 clamp(16px,1.45vw,20px)/1.6 var(--font-body)}
+@media(max-width:760px){.chHer-duo{grid-template-columns:1fr}.chHer-one.chHer-h{border-left:0;border-top:1px solid #d8e0e5}.chHer-media{aspect-ratio:16/8}}
+</style>
+<div class="chHer chHer-full">
+<section class="chHer-section">
+<div class="chHer-wrap">
+<div class="chHer-head">
+<p class="chHer-eyebrow">The partnership</p>
+<h2 class="chHer-h2">Two engineering heritages</h2>
+<p style="margin:12px 0 0;max-width:620px">One company, owned 50/50 by Culham Engineering and The Herrick Corporation, accountable from start to finish.</p>
+</div>
+<div class="chHer-media" style="background-image:url(https://static1.squarespace.com/static/68ba43e4942f40118609f7d5/t/6a429b553355ae2137a3d505/1782750037805/IMG_0352.JPG
+)">
+<div class="chHer-scrim"></div>
+<div class="chHer-stamp"><b>Fabricated steel</b></div>
+</div>
+<div class="chHer-duo">
+<div class="chHer-one">
+<p class="chHer-meta" style="color:#bf2d31">Culham Engineering · Whangārei, NZ</p>
+<h3>60+ years of NZ heavy engineering.</h3>
+<p>Culham brings New Zealand delivery knowledge, site execution and heavy engineering depth.</p>
+</div>
+<div class="chHer-one chHer-h">
+<p class="chHer-meta" style="color:#1f5871">Herrick · California, USA</p>
+<h3>Advanced high-volume fabrication.</h3>
+<p>Herrick adds high-volume fabrication capacity and a century of structural-steel depth.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>

@@ -1,0 +1,51 @@
+<style>
+.chHero{--chs-ink:#101820;--chs-navy:#1f5871;--chs-red-deep:#bf2d31;--chs-red-shadow:#7a1d20;--chs-red-light:#f15d61;--chs-panel-3:#1b2731;--font-display:'Rajdhani','Arial Narrow',sans-serif;--font-body:'Barlow','Segoe UI',system-ui,sans-serif;color:var(--chs-ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased}
+.chHero,.chHero *,.chHero *::before,.chHero *::after{box-sizing:border-box;min-width:0}
+.chHero h1{margin:0;font-family:var(--font-display);font-weight:700;text-transform:uppercase;line-height:1.03;letter-spacing:.01em}
+.chHero p{margin:0}
+.chHero a{color:inherit;text-decoration:none}
+.chHero-full{width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+.page-section:has(.chHero){padding-top:0!important;padding-bottom:0!important}
+.page-section:has(.chHero) .content-wrapper{padding-left:0!important;padding-right:0!important;max-width:none!important}
+.page-section:has(.chHero) .fluid-engine{padding:0!important}
+.fe-block:has(.chHero){margin:0!important}
+.chHero-wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+.chHero-eyebrow{display:inline-flex;align-items:center;gap:12px;margin:0 0 14px;font:800 12px/1.2 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:var(--chs-red-light)}
+.chHero-eyebrow::before{content:"";width:34px;height:2px;background:currentColor;flex:0 0 34px}
+.chHero-hero .chHero-inner{position:relative;padding-top:clamp(84px,11vw,168px);padding-bottom:clamp(20px,2.5vw,36px)}
+.chHero-hero h1{color:#fff;font-size:clamp(46px,7vw,104px);line-height:.98;max-width:13ch}
+.chHero-hero h1 .chHero-accent{color:var(--chs-red-light)}
+.chHero-hero .chHero-sub{font:400 clamp(16px,1.45vw,21px)/1.55 var(--font-body);color:rgba(255,255,255,.86);max-width:50ch;margin:26px 0 0}
+.chHero-hero .chHero-bullets{display:flex;flex-wrap:wrap;gap:10px 28px;margin:28px 0 0;padding:0;list-style:none}
+.chHero-hero .chHero-bullets li{display:flex;align-items:center;gap:10px;font:700 13px/1.3 var(--font-body);letter-spacing:.04em;color:rgba(255,255,255,.92)}
+.chHero-hero .chHero-bullets li::before{content:"";width:9px;height:9px;background:var(--chs-navy);flex:0 0 9px}
+.chHero-hero .chHero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:48px}
+.chHero-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 28px;border:2px solid var(--chs-ink);background:#fff;color:var(--chs-ink);box-shadow:5px 5px 0 var(--chs-ink);font:800 13px/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease,background .12s ease,color .12s ease}
+.chHero-btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--chs-ink)}
+.chHero-btn.chHero-primary{background:var(--chs-red-deep);border-color:var(--chs-red-deep);color:#fff;box-shadow:5px 5px 0 var(--chs-red-shadow)}
+.chHero-btn.chHero-primary:hover{box-shadow:3px 3px 0 var(--chs-red-shadow)}
+.chHero-btn.chHero-ondark{background:transparent;color:#fff;border-color:#fff;box-shadow:5px 5px 0 rgba(255,255,255,.85)}
+.chHero-btn.chHero-ondark:hover{background:#fff;color:var(--chs-ink);box-shadow:3px 3px 0 rgba(255,255,255,.85)}
+.chHero-btn .chHero-arr{font-family:var(--font-body);font-weight:700;font-size:15px;transition:transform .12s ease}
+.chHero-btn:hover .chHero-arr{transform:translateX(3px)}
+@media(max-width:600px){.chHero-hero .chHero-bullets{gap:8px 18px}}
+</style>
+<div class="chHero chHero-full">
+<section class="chHero-hero">
+<div class="chHero-bg"></div>
+<div class="chHero-wrap chHero-inner">
+<p class="chHero-eyebrow">End-to-end NZ steel</p>
+<h1>Do it once.<br /><span class="chHero-accent" style="color:#fff">Do it right.</span></h1>
+<p class="chHero-sub">CH Steel gives complex New Zealand projects one accountable interface for planning, detailing, fabrication, coatings, logistics and erection.</p>
+<ul class="chHero-bullets">
+<li>Culham + Herrick, 50/50 since 2015</li>
+<li>One CH Steel interface</li>
+<li>Planning to erection</li>
+</ul>
+<div class="chHero-actions">
+<a class="chHero-btn chHero-primary" href="/projects">See the proof <span class="chHero-arr">&rsaquo;</span></a>
+<a class="chHero-btn chHero-ondark" href="/capabilities">Our capability</a>
+</div>
+</div>
+</section>
+</div>

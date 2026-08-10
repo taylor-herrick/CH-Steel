@@ -1,0 +1,28 @@
+<style>
+.chCap{--chs-ink:#101820;--chs-navy:#1f5871;--chs-red-deep:#bf2d31;--font-display:'Rajdhani','Arial Narrow',sans-serif;--font-body:'Barlow','Segoe UI',system-ui,sans-serif;color:var(--chs-ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased}
+.chCap,.chCap *,.chCap *::before,.chCap *::after{box-sizing:border-box;min-width:0}
+.chCap p{margin:0}
+.chCap-full{width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+.page-section:has(.chCap){padding-top:0!important;padding-bottom:0!important}
+.page-section:has(.chCap) .content-wrapper{padding-left:0!important;padding-right:0!important;max-width:none!important}
+.page-section:has(.chCap) .fluid-engine{padding:0!important}
+.fe-block:has(.chCap){margin:0!important}
+.chCap-wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+.chCap-databar{background:transparent;padding-block:clamp(4px,1vw,14px)}.chCap-databar .chCap-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.chCap-databar .chCap-cell{padding:clamp(10px,1.4vw,18px) clamp(16px,2vw,30px);border-left:1px solid rgba(16,24,32,.12)}.chCap-databar .chCap-num{font-family:var(--font-display);font-weight:700;font-size:clamp(34px,3.4vw,52px);line-height:1;color:var(--chs-red-deep);text-transform:uppercase}
+.chCap-databar .chCap-cap{margin-top:16px;font:600 13.5px/1.45 var(--font-body);color:rgb(88,107,115);max-width:24ch}
+@media(max-width:1080px){.chCap-databar .chCap-grid{grid-template-columns:repeat(2,1fr)}.chCap-databar .chCap-cell{border-left:1px solid rgba(16,24,32,.12);padding-left:clamp(16px,2vw,30px)}.chCap-databar .chCap-cell:nth-child(odd){border-left:0;padding-left:0}}
+@media(max-width:600px){.chCap-databar .chCap-grid{grid-template-columns:1fr}.chCap-databar .chCap-cell{border-left:0;padding-left:0;border-top:1px solid rgba(16,24,32,.12);padding-top:clamp(20px,5vw,30px)}.chCap-databar .chCap-cell:first-child{border-top:0;padding-top:0}}
+</style>
+<div class="chCap chCap-full">
+<section class="chCap-databar" aria-label="Capacity">
+<div class="chCap-wrap">
+<div class="chCap-grid">
+<div class="chCap-cell"><div class="chCap-num">220T</div><div class="chCap-cap" style="width:199px;font-size:12px">Mobile crane capacity</div></div>
+<div class="chCap-cell"><div class="chCap-num">8</div><div class="chCap-cap" style="color:rgb(115,130,137)">On-site fabrication workshops in Whangārei</div></div>
+<div class="chCap-cell"><div class="chCap-num">9HA</div><div class="chCap-cap">Whangārei site with laydown space</div></div>
+<div class="chCap-cell"><div class="chCap-num">25,000M²</div><div class="chCap-cap">Approx. covered workshop footprint</div></div>
+</div>
+</div>
+</section>
+</div>

@@ -1,0 +1,12 @@
+<div class="chs acc-about chs-full">
+<section class="chs-section is-dark" style="padding-bottom:80px">
+<div class="chs-wrap">
+<p class="chs-eyebrow is-ondark">Where CH Steel fits</p>
+<h2 class="chs-h2 is-xl">Planning steel where risk, scale or sequence matters?</h2>
+<p class="chs-cta-p" style="margin-bottom:56px"></p>
+<div class="chs-actions">
+<a class="chs-btn" href="/contact">Discuss a project <span class="chs-arr">&rsaquo;</span></a>
+</div>
+</div>
+</section>
+</div>

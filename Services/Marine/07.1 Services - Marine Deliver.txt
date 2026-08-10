@@ -1,0 +1,107 @@
+<style>
+.chMarineScope{
+  width:100%;
+  font-family:'Barlow','Segoe UI',system-ui,sans-serif;
+  color:#101820;
+}
+
+.chMarineScope,
+.chMarineScope *{
+  box-sizing:border-box;
+  min-width:0;
+}
+
+.chMarineScope-head{
+  margin-bottom:clamp(22px,3vw,36px);
+}
+
+.chMarineScope-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 14px;
+  font:800 12px/1.2 'Barlow','Segoe UI',system-ui,sans-serif;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:#2f8fa0;
+}
+
+.chMarineScope-eyebrow::before{
+  content:"";
+  width:34px;
+  height:2px;
+  background:currentColor;
+  flex:0 0 34px;
+}
+
+.chMarineScope-title{
+  margin:0;
+  font-family:'Rajdhani','Arial Narrow',sans-serif;
+  font-size:clamp(34px,4.4vw,62px);
+  font-weight:700;
+  line-height:1.03;
+  letter-spacing:.01em;
+  text-transform:uppercase;
+  color:#101820;
+}
+
+.chMarineScope-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+}
+
+.chMarineScope-card{
+  background:#fff;
+  border:1px solid rgba(16,24,32,.13);
+  border-left:4px solid #2f8fa0;
+  padding:clamp(20px,2.4vw,28px);
+  min-height:126px;
+}
+
+.chMarineScope-card b{
+  display:block;
+  margin-bottom:12px;
+  font-family:'Rajdhani','Arial Narrow',sans-serif;
+  font-size:clamp(20px,2vw,25px);
+  font-weight:700;
+  line-height:1.08;
+  text-transform:uppercase;
+  color:#101820;
+}
+
+.chMarineScope-card span{
+  display:block;
+  font-size:14px;
+  line-height:1.55;
+  color:#687882;
+}
+
+@media(max-width:900px){
+  .chMarineScope-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:620px){
+  .chMarineScope-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
+<div class="chMarineScope">
+  <div class="chMarineScope-head">
+    <p class="chMarineScope-eyebrow">What we deliver</p>
+    <h2 class="chMarineScope-title">Marine and coastal steel scope</h2>
+  </div>
+
+  <div class="chMarineScope-grid">
+    <div class="chMarineScope-card"><b>Marine construction &amp; repairs</b><span>New coastal structures, plus repair and strengthening of existing assets.</span></div>
+    <div class="chMarineScope-card"><b>Wharves &amp; jetties</b><span>Berthing structures, fenders and access steelwork built to spec.</span></div>
+    <div class="chMarineScope-card"><b>Slipways</b><span>Haul-out and launch structures engineered for load and tide.</span></div>
+    <div class="chMarineScope-card"><b>Corrosion-resistant steelwork</b><span>Coatings and detailing planned for a long service life in salt air.</span></div>
+    <div class="chMarineScope-card"><b>Coastal access &amp; platforms</b><span>Walkways, gantries and support steel for waterside sites.</span></div>
+    <div class="chMarineScope-card"><b>Inspection &amp; maintenance</b><span>Condition assessment and planned upkeep of marine assets.</span></div>
+  </div>
+</div>

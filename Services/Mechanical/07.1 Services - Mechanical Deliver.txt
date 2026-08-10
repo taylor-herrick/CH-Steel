@@ -1,0 +1,123 @@
+<style>
+.page-section:has(.chMechanicalScope){
+  min-height:0!important;
+  padding-top:0!important;
+  padding-bottom:0!important;
+}
+
+.page-section:has(.chMechanicalScope) .content-wrapper{
+  min-height:0!important;
+  padding-top:0!important;
+  padding-bottom:0!important;
+}
+
+.page-section:has(.chMechanicalScope) .fluid-engine{
+  min-height:0!important;
+}
+
+.chMechanicalScope{
+  width:100%;
+  font-family:'Barlow','Segoe UI',system-ui,sans-serif;
+  color:#101820;
+}
+
+.chMechanicalScope,
+.chMechanicalScope *{
+  box-sizing:border-box;
+  min-width:0;
+}
+
+.chMechanicalScope-head{
+  margin-bottom:clamp(22px,3vw,36px);
+}
+
+.chMechanicalScope-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 14px;
+  font:800 12px/1.2 'Barlow','Segoe UI',system-ui,sans-serif;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:#b87a2c;
+}
+
+.chMechanicalScope-eyebrow::before{
+  content:"";
+  width:34px;
+  height:2px;
+  background:currentColor;
+  flex:0 0 34px;
+}
+
+.chMechanicalScope-title{
+  margin:0;
+  font-family:'Rajdhani','Arial Narrow',sans-serif;
+  font-size:clamp(34px,4.4vw,62px);
+  font-weight:700;
+  line-height:1.03;
+  letter-spacing:.01em;
+  text-transform:uppercase;
+  color:#101820;
+}
+
+.chMechanicalScope-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+}
+
+.chMechanicalScope-card{
+  background:#fff;
+  border:1px solid rgba(16,24,32,.13);
+  border-left:4px solid #b87a2c;
+  padding:clamp(20px,2.4vw,28px);
+  min-height:126px;
+}
+
+.chMechanicalScope-card b{
+  display:block;
+  margin-bottom:12px;
+  font-family:'Rajdhani','Arial Narrow',sans-serif;
+  font-size:clamp(20px,2vw,25px);
+  font-weight:700;
+  line-height:1.08;
+  text-transform:uppercase;
+  color:#101820;
+}
+
+.chMechanicalScope-card span{
+  display:block;
+  font-size:14px;
+  line-height:1.55;
+  color:#687882;
+}
+
+@media(max-width:900px){
+  .chMechanicalScope-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:620px){
+  .chMechanicalScope-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
+<div class="chMechanicalScope">
+  <div class="chMechanicalScope-head">
+    <p class="chMechanicalScope-eyebrow">What we deliver</p>
+    <h2 class="chMechanicalScope-title">Mechanical steel scope</h2>
+  </div>
+
+  <div class="chMechanicalScope-grid">
+    <div class="chMechanicalScope-card"><b>Pressure vessels</b><span>Code-fabricated process vessels and equipment.</span></div>
+    <div class="chMechanicalScope-card"><b>Piping systems</b><span>Process and service pipework coordinated with plant.</span></div>
+    <div class="chMechanicalScope-card"><b>Storage tanks</b><span>Tanks for fuel, process and bulk liquids.</span></div>
+    <div class="chMechanicalScope-card"><b>Petrochemical maintenance</b><span>Shutdown turnarounds planning and execution.</span></div>
+    <div class="chMechanicalScope-card"><b>Industrial maintenance</b><span>Planned upkeep and repair of plant steelwork.</span></div>
+    <div class="chMechanicalScope-card"><b>Coatings &amp; protection</b><span>Protective systems for process environments.</span></div>
+  </div>
+</div>
